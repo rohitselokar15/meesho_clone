@@ -1,0 +1,21 @@
+.categories {
+  padding: 20px;
+  /* width: 200px; */
+}
+
+.categories li {
+  /* border: 2px solid red; */
+  padding: 6px;
+}
+
+/* cursor-pointer hover:border-b-2 hover:border-pink-600 p-3 */
+
+.product {
+  cursor: pointer;
+  padding: 12px;
+}
+
+.product:hover {
+  border-bottom: 3px solid #d81b60;
+  /* border: solid rgb(233, 22, 57); */
+}
