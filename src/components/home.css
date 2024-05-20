@@ -14,3 +14,14 @@
 }
 
 
+.card-img{
+    overflow: hidden;
+}
+
+.card-img img{
+   transition: all 1.1s ease;
+}
+
+.card-img:hover img{
+   transform: scale(1.3);
+}
