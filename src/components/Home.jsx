@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import home from "../assets/meesho-home.jpg";
 // import app from "../assets/meesho-app.jpg";
-
 import "../components/home.css";
-
 import products from "../../product.json";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [category, setCategory] = useState(false);
@@ -210,27 +209,30 @@ const Home = () => {
         {/* product part */}
         <div className="grid grid-cols-4 gap-4 w-[80%]">
           {products.map((items) => (
-            <div className="border rounded-xl h-[25rem] text-gray-500">
-              <div className="flex justify-center">
-                <img src={items.image} className="w-[120px] h-[11rem] py-6" />
-              </div>
-              <div className="px-2">
-                <p className="text-[17px] py-2">{items.title}</p>
-                <p className="text-[22px] text-black font-semibold py-1">
-                  ₹ {items.price}{" "}
-                  <span className="text-[14px] text-gray-500">onwards</span>
-                </p>
-                <button className="bg-pink-50  rounded-xl p-1 px-3 my-2">
-                  Free Delivery
-                </button>
-                <div className="flex my-2">
-                  <p className="bg-green-600 text-white w-[47px] text-center rounded-md">
-                    {items.rating.rate} ★
+           <Link to={`/product/${items.id}`} key={items.id}>
+           <div className="border rounded-xl h-[25rem] text-gray-500 hover:border-pink-500">
+                <div className="card-img flex justify-center">
+                  <img src={items.image} className="w-[120px] h-[11rem] py-6" />
+                </div>
+                <div className="px-2">
+                  <p className="text-[17px] py-2">{items.title}</p>
+                  <p className="text-[22px] text-black font-semibold py-1">
+                    ₹ {items.price}{" "}
+                    <span className="text-[14px] text-gray-500">onwards</span>
                   </p>
-                  <p className="mx-2">{items.rating.count} Reviews</p>
+                  <button className="bg-pink-50  rounded-xl p-1 px-3 my-2">
+                    Free Delivery
+                  </button>
+                  <div className="flex my-2">
+                    <p className="bg-green-600 text-white w-[47px] text-center rounded-md">
+                      {items.rating.rate} ★
+                    </p>
+                    <p className="mx-2">{items.rating.count} Reviews</p>
+                  </div>
                 </div>
               </div>
-            </div>
+           </Link>
+           
           ))}
         </div>
       </div>

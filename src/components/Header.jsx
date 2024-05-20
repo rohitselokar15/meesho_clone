@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/meeshoLogo.png";
 import "../components/header.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -94,7 +95,9 @@ const Header = () => {
     <div className="xl:container xl:mx-auto max-w-7xl">
       <nav className="flex justify-between lg:justify-around items-center h-16 mx-2 sticky top-0 z-50">
         <div className="">
-          <img src={logo} className="w-36" />
+          <Link to="/">
+            <img src={logo} className="w-36" />
+          </Link>
         </div>
 
         <div className="lg:hidden cursor-pointer" onClick={toggleMenu}>
