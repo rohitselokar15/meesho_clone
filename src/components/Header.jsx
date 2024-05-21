@@ -92,8 +92,8 @@ const Header = () => {
   };
 
   return (
-    <div className="xl:container xl:mx-auto max-w-7xl">
-      <nav className="flex justify-between lg:justify-around items-center h-16 mx-2 sticky top-0 z-50">
+    <div className="xl:container xl:mx-auto max-w-7xl sticky top-0 bg-white">
+      <nav className="flex justify-between lg:justify-around items-center h-16 mx-2">
         <div className="">
           <Link to="/">
             <img src={logo} className="w-36" />
@@ -110,7 +110,7 @@ const Header = () => {
           } lg:static lg:bg-transparent lg:p-0`}
         >
           <ul className="text-center lg:flex items-center text-gray-800">
-            <li className="p-1 xl:p-2 border border-purple-700">
+            <li className="p-1 xl:p-2 border border-pink-500">
               <i className="fa-solid fa-magnifying-glass px-1 text-gray-500" />
               <input
                 type="text"

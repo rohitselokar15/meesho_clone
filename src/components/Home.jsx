@@ -2,10 +2,27 @@ import React, { useState } from "react";
 import home from "../assets/meesho-home.jpg";
 // import app from "../assets/meesho-app.jpg";
 import "../components/home.css";
-import products from "../../product.json";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { ProductContext } from "../context/ProductContext";
 
 const Home = () => {
+  const { toggleCategory, filterProduct, setPriceRange, toggleRating} =
+    useContext(ProductContext);
+
+  const handleCategoryChange = (category) => {
+    toggleCategory(category);
+  };
+
+  const handlePriceChange = (min, max) => {
+    setPriceRange(min, max);
+  };
+
+  const handleRatingChange = (minRating)=>{
+   toggleRating(minRating)
+  }
+
+
   const [category, setCategory] = useState(false);
   const [gender, setGender] = useState(false);
   const [price, setPrice] = useState(false);
@@ -29,9 +46,9 @@ const Home = () => {
 
   return (
     <div className="xl:container xl:mx-auto max-w-7xl">
-      <div className=" flex justify-center">
+      {/* <div className=" flex justify-center">
         <img src={home} className="w-[1000px]" />
-      </div>
+      </div> */}
       <div className="mt-10 flex">
         <div className="border p-2 w-[20%] px-5 mr-2">
           <ul className="text-[17px] font-semibold">
@@ -67,10 +84,40 @@ const Home = () => {
                 </span>
               </div>
               {category && (
-                <ul>
-                  <li>a</li>
-                  <li>a</li>
-                </ul>
+                <div className="mt-3">
+                  <p className="category-checkbox">
+                    <input
+                      type="checkbox"
+                      className="mx-2"
+                      onClick={() => handleCategoryChange("men")}
+                    />
+                    men's
+                  </p>
+                  <p className="category-checkbox">
+                    <input
+                      type="checkbox"
+                      className="mx-2"
+                      onClick={() => handleCategoryChange("women")}
+                    />
+                    women's
+                  </p>
+                  <p className="category-checkbox">
+                    <input
+                      type="checkbox"
+                      className="mx-2"
+                      onClick={() => handleCategoryChange("electronics")}
+                    />
+                    electronics
+                  </p>
+                  <p className="category-checkbox">
+                    <input
+                      type="checkbox"
+                      className="mx-2"
+                      onClick={() => handleCategoryChange("jewelery")}
+                    />
+                    jewelery
+                  </p>
+                </div>
               )}
             </li>
             <hr />
@@ -138,18 +185,64 @@ const Home = () => {
               </div>
               {price && (
                 <div className="mt-4">
-                  <button className="category-button my-1">Under ₹ 149</button>
-                  <button className="category-button my-1">Under ₹ 199</button>
-                  <button className="category-button my-1">Under ₹ 249</button>
-                  <button className="category-button my-1">Under ₹ 299</button>
-                  <button className="category-button my-1">Under ₹ 349</button>
-                  <button className="category-button my-1">Under ₹ 399</button>
-                  <button className="category-button my-1">Under ₹ 449</button>
-                  <button className="category-button my-1">Under ₹ 0 99</button>
-                  <button className="category-button my-1">
+                  <button
+                    className="category-button my-1"
+                    onClick={() => handlePriceChange(0, 149)}
+                  >
+                    Under ₹ 149
+                  </button>
+                  <button
+                    className="category-button my-1"
+                    onClick={() => handlePriceChange(0, 199)}
+                  >
+                    Under ₹ 199
+                  </button>
+                  <button
+                    className="category-button my-1"
+                    onClick={() => handlePriceChange(0, 249)}
+                  >
+                    Under ₹ 249
+                  </button>
+                  <button
+                    className="category-button my-1"
+                    onClick={() => handlePriceChange(0, 299)}
+                  >
+                    Under ₹ 299
+                  </button>
+                  <button
+                    className="category-button my-1"
+                    onClick={() => handlePriceChange(0, 349)}
+                  >
+                    Under ₹ 349
+                  </button>
+                  <button
+                    className="category-button my-1"
+                    onClick={() => handlePriceChange(0, 399)}
+                  >
+                    Under ₹ 399
+                  </button>
+                  <button
+                    className="category-button my-1"
+                    onClick={() => handlePriceChange(0, 449)}
+                  >
+                    Under ₹ 449
+                  </button>
+                  <button
+                    className="category-button my-1"
+                    onClick={() => handlePriceChange(0, 599)}
+                  >
+                    Under ₹ 599
+                  </button>
+                  <button
+                    className="category-button my-1"
+                    onClick={() => handlePriceChange(0, 99)}
+                  >
                     Under ₹ 0 - ₹ 99
                   </button>
-                  <button className="category-button my-1">
+                  <button
+                    className="category-button my-1"
+                    onClick={() => handlePriceChange(150, 199)}
+                  >
                     Under ₹ 150 - ₹ 199
                   </button>
                 </div>
@@ -185,19 +278,36 @@ const Home = () => {
               {rating && (
                 <div className="mt-3">
                   <p className="category-checkbox">
-                    <input type="checkbox" className="mx-2" />
+                    <input
+                      type="checkbox"
+                      className="mx-2"
+                      onClick={()=> handleRatingChange(2)}
+                    />
                     2.0 and above
                   </p>
                   <p className="category-checkbox">
-                    <input type="checkbox" className="mx-2" />
+                    <input
+                      type="checkbox"
+                      className="mx-2"
+                      onClick={()=> handleRatingChange(3)}
+                    />
                     3.0 and above
                   </p>
                   <p className="category-checkbox">
-                    <input type="checkbox" className="mx-2" />
+                    <input
+                      type="checkbox"
+                      className="mx-2"
+                      onClick={()=> handleRatingChange(4)}
+                    />
                     4.0 and above
                   </p>
                   <p className="category-checkbox">
-                    <input type="checkbox" className="mx-2" />5 and above
+                    <input
+                      type="checkbox"
+                      className="mx-2"
+                      onClick={()=> handleRatingChange(5)}
+                    />
+                    5 and above
                   </p>
                 </div>
               )}
@@ -208,9 +318,9 @@ const Home = () => {
 
         {/* product part */}
         <div className="grid grid-cols-4 gap-4 w-[80%]">
-          {products.map((items) => (
-           <Link to={`/product/${items.id}`} key={items.id}>
-           <div className="border rounded-xl h-[25rem] text-gray-500 hover:border-pink-500">
+          {filterProduct.map((items) => (
+            <Link to={`/product/${items.id}`} key={items.id}>
+              <div className="border rounded-xl h-[25rem] text-gray-500 hover:border-pink-500">
                 <div className="card-img flex justify-center">
                   <img src={items.image} className="w-[120px] h-[11rem] py-6" />
                 </div>
@@ -231,8 +341,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-           </Link>
-           
+            </Link>
           ))}
         </div>
       </div>
