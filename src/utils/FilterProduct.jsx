@@ -2,7 +2,8 @@ const filterProductByCategory = (
   products,
   selectedCategory,
   selectPriceRange,
-  selectRating
+  selectRating,
+  selectGender
 ) => {
   let filProducts = products;
 
@@ -12,19 +13,18 @@ const filterProductByCategory = (
     );
   }
 
+  if (selectGender.length > 0) {
+    filProducts = filProducts.filter((product) =>
+      selectGender.includes(product.gender)
+    );
+  }
+
   if (selectPriceRange) {
     const [minPrice, maxPrice] = selectPriceRange;
     filProducts = filProducts.filter(
       (product) => product.price >= minPrice && product.price <= maxPrice
     );
   }
-
-  //   if (selectRating.size > 0) {
-  //     const minRating = Math.max(...selectRating);
-  //     filProducts = filProducts.filter(
-  //       (product) => product.rating.rate >= minRating
-  //     );
-  //   }
 
   if (selectRating.size > 0) {
     filProducts = filProducts.filter((product) => {

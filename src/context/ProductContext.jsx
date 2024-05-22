@@ -10,6 +10,7 @@ export const ProductProvider = ({ children }) => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectPriceRange, setSelectPriceRange] = useState(null);
   const [selectRating, setSelectRating] = useState(new Set());
+  const [selectGender, setSelectGender] = useState([]);
 
   useEffect(() => {
     setProducts(productsData);
@@ -22,10 +23,17 @@ export const ProductProvider = ({ children }) => {
         products,
         selectedCategory,
         selectPriceRange,
-        selectRating
+        selectRating,
+        selectGender
       )
     );
-  }, [selectedCategory, selectPriceRange, products, selectRating]);
+  }, [
+    selectedCategory,
+    selectPriceRange,
+    products,
+    selectRating,
+    selectGender,
+  ]);
 
   const toggleCategory = (category) => {
     setSelectedCategory((prev) =>
@@ -51,6 +59,10 @@ export const ProductProvider = ({ children }) => {
     });
   };
 
+  const toggleGender = (gender) => {
+    setSelectGender((prev) => (prev === gender ? "" : gender));
+  };
+
   return (
     <ProductContext.Provider
       value={{
@@ -61,6 +73,7 @@ export const ProductProvider = ({ children }) => {
         toggleCategory,
         setPriceRange,
         toggleRating,
+        toggleGender,
       }}
     >
       {children}
