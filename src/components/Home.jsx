@@ -7,8 +7,13 @@ import { useContext } from "react";
 import { ProductContext } from "../context/ProductContext";
 
 const Home = () => {
-  const { toggleCategory, filterProduct, setPriceRange, toggleRating} =
-    useContext(ProductContext);
+  const {
+    toggleCategory,
+    filterProduct,
+    setPriceRange,
+    toggleRating,
+    toggleGender,
+  } = useContext(ProductContext);
 
   const handleCategoryChange = (category) => {
     toggleCategory(category);
@@ -18,10 +23,13 @@ const Home = () => {
     setPriceRange(min, max);
   };
 
-  const handleRatingChange = (minRating)=>{
-   toggleRating(minRating)
-  }
+  const handleRatingChange = (minRating) => {
+    toggleRating(minRating);
+  };
 
+  const handleGenderChange = (gender) => {
+    toggleGender(gender);
+  };
 
   const [category, setCategory] = useState(false);
   const [gender, setGender] = useState(false);
@@ -149,10 +157,30 @@ const Home = () => {
               </div>
               {gender && (
                 <div className="mt-4 flex flex-wrap gap-2">
-                  <button className="category-button">Boys</button>
-                  <button className="category-button">Girls</button>
-                  <button className="category-button">Men</button>
-                  <button className="category-button">Women</button>
+                  <button
+                    className="category-button"
+                    onClick={() => handleGenderChange("boys")}
+                  >
+                    Boys
+                  </button>
+                  <button
+                    className="category-button"
+                    onClick={() => handleGenderChange("girls")}
+                  >
+                    Girls
+                  </button>
+                  <button
+                    className="category-button"
+                    onClick={() => handleGenderChange("mens")}
+                  >
+                    Men
+                  </button>
+                  <button
+                    className="category-button"
+                    onClick={() => handleGenderChange("womens")}
+                  >
+                    Women
+                  </button>
                 </div>
               )}
             </li>
@@ -281,7 +309,7 @@ const Home = () => {
                     <input
                       type="checkbox"
                       className="mx-2"
-                      onClick={()=> handleRatingChange(2)}
+                      onClick={() => handleRatingChange(2)}
                     />
                     2.0 and above
                   </p>
@@ -289,7 +317,7 @@ const Home = () => {
                     <input
                       type="checkbox"
                       className="mx-2"
-                      onClick={()=> handleRatingChange(3)}
+                      onClick={() => handleRatingChange(3)}
                     />
                     3.0 and above
                   </p>
@@ -297,7 +325,7 @@ const Home = () => {
                     <input
                       type="checkbox"
                       className="mx-2"
-                      onClick={()=> handleRatingChange(4)}
+                      onClick={() => handleRatingChange(4)}
                     />
                     4.0 and above
                   </p>
@@ -305,7 +333,7 @@ const Home = () => {
                     <input
                       type="checkbox"
                       className="mx-2"
-                      onClick={()=> handleRatingChange(5)}
+                      onClick={() => handleRatingChange(5)}
                     />
                     5 and above
                   </p>

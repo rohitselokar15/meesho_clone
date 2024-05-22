@@ -139,7 +139,7 @@ const Header = () => {
         </div>
       </nav>
       <div className="my-2">
-        <ul className="text-gray-800 flex justify-evenly border-t-2 border-b-2">
+        <ul className=" text-gray-800 flex justify-evenly border-t-2 border-b-2">
           <li
             className="product"
             onMouseEnter={handleMouseEnter}
@@ -147,7 +147,7 @@ const Header = () => {
           >
             Women Ethic
             {dropdownOpen && (
-              <div className="shadow mt-3 absolute flex text-gray-600">
+              <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
                 <ul className="categories">
                   <li className="text-pink-600 font-semibold">
                     All Women Ethic
@@ -155,7 +155,7 @@ const Header = () => {
                   <li>View All</li>
                 </ul>
 
-                <ul className="categories">
+                <ul className="categories bg-pink-50">
                   <li className="text-pink-600 font-semibold">Sarees</li>
                   <li>All Sarees</li>
                   <li>Silk Sarees</li>
@@ -176,7 +176,7 @@ const Header = () => {
                   <li>Embroidered kurtis</li>
                 </ul>
 
-                <ul className="categories ">
+                <ul className="categories bg-pink-50">
                   <li className="text-pink-600 font-semibold">
                     Suits & Dress Material
                   </li>
@@ -205,7 +205,7 @@ const Header = () => {
           >
             Women Western
             {western && (
-              <div className="absolute flex text-gray-600">
+              <div className="bg-white border mt-4 w-full left-0 absolute flex text-gray-600 shadow-md">
                 <ul className="categories">
                   <li className="text-pink-600 font-semibold">Topwear</li>
                   <li>Tops</li>
@@ -214,7 +214,7 @@ const Header = () => {
                   <li>Jumpsuits</li>
                 </ul>
 
-                <ul className="categories ">
+                <ul className="categories bg-pink-50">
                   <li className="text-pink-600 font-semibold">Bottemwear</li>
                   <li>Jeans</li>
                   <li>Jeggings</li>
@@ -230,7 +230,7 @@ const Header = () => {
                   <li>Briefs</li>
                 </ul>
 
-                <ul className="categories ">
+                <ul className="categories bg-pink-50">
                   <li className="text-pink-600 font-semibold">Sleepwear</li>
                   <li>Nightsuits</li>
                   <li>Babydolls</li>
@@ -238,6 +238,7 @@ const Header = () => {
               </div>
             )}
           </li>
+
           <li
             className="product"
             onMouseEnter={handleMensEnter}
@@ -245,7 +246,7 @@ const Header = () => {
           >
             Men
             {mens && (
-              <div className="absolute flex text-gray-600">
+              <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
                 <ul className="categories">
                   <li className="text-pink-600 font-semibold">Topwear</li>
                   <li>Tops</li>
@@ -254,7 +255,7 @@ const Header = () => {
                   <li>Jumpsuits</li>
                 </ul>
 
-                <ul className="categories ">
+                <ul className="categories bg-pink-50 ">
                   <li className="text-pink-600 font-semibold">Bottemwear</li>
                   <li>Jeans</li>
                   <li>Jeggings</li>
@@ -270,7 +271,7 @@ const Header = () => {
                   <li>Briefs</li>
                 </ul>
 
-                <ul className="categories ">
+                <ul className="categories bg-pink-50 ">
                   <li className="text-pink-600 font-semibold">Sleepwear</li>
                   <li>Nightsuits</li>
                   <li>Babydolls</li>
@@ -278,6 +279,7 @@ const Header = () => {
               </div>
             )}
           </li>
+
           <li
             className="product"
             onMouseEnter={handleKidsEnter}
@@ -285,7 +287,7 @@ const Header = () => {
           >
             Kids
             {kids && (
-              <div className="absolute flex text-gray-600">
+              <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
                 <ul className="categories">
                   <li className="text-pink-600 font-semibold">Topwear</li>
                   <li>Tops</li>
@@ -294,7 +296,7 @@ const Header = () => {
                   <li>Jumpsuits</li>
                 </ul>
 
-                <ul className="categories ">
+                <ul className="categories bg-pink-50">
                   <li className="text-pink-600 font-semibold">Bottemwear</li>
                   <li>Jeans</li>
                   <li>Jeggings</li>
@@ -310,7 +312,7 @@ const Header = () => {
                   <li>Briefs</li>
                 </ul>
 
-                <ul className="categories ">
+                <ul className="categories bg-pink-50">
                   <li className="text-pink-600 font-semibold">Sleepwear</li>
                   <li>Nightsuits</li>
                   <li>Babydolls</li>
@@ -318,6 +320,7 @@ const Header = () => {
               </div>
             )}
           </li>
+
           <li
             className="product"
             onMouseEnter={handleKitchenEnter}
@@ -325,7 +328,7 @@ const Header = () => {
           >
             Home & Kitchen
             {kitchen && (
-              <div className="absolute flex text-gray-600">
+              <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
                 <ul className="categories">
                   <li className="text-pink-600 font-semibold">Topwear</li>
                   <li>Tops</li>
@@ -334,7 +337,7 @@ const Header = () => {
                   <li>Jumpsuits</li>
                 </ul>
 
-                <ul className="categories ">
+                <ul className="categories bg-pink-50">
                   <li className="text-pink-600 font-semibold">Bottemwear</li>
                   <li>Jeans</li>
                   <li>Jeggings</li>
@@ -350,7 +353,7 @@ const Header = () => {
                   <li>Briefs</li>
                 </ul>
 
-                <ul className="categories ">
+                <ul className="categories bg-pink-50">
                   <li className="text-pink-600 font-semibold">Sleepwear</li>
                   <li>Nightsuits</li>
                   <li>Babydolls</li>
@@ -358,6 +361,7 @@ const Header = () => {
               </div>
             )}
           </li>
+
           <li
             className="product"
             onMouseEnter={handleBeautyEnter}
@@ -365,7 +369,7 @@ const Header = () => {
           >
             Beauty & Health
             {beauty && (
-              <div className="absolute flex text-gray-600">
+              <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
                 <ul className="categories">
                   <li className="text-pink-600 font-semibold">Topwear</li>
                   <li>Tops</li>
@@ -374,7 +378,7 @@ const Header = () => {
                   <li>Jumpsuits</li>
                 </ul>
 
-                <ul className="categories ">
+                <ul className="categories bg-pink-50">
                   <li className="text-pink-600 font-semibold">Bottemwear</li>
                   <li>Jeans</li>
                   <li>Jeggings</li>
@@ -390,7 +394,7 @@ const Header = () => {
                   <li>Briefs</li>
                 </ul>
 
-                <ul className="categories ">
+                <ul className="categories bg-pink-50">
                   <li className="text-pink-600 font-semibold">Sleepwear</li>
                   <li>Nightsuits</li>
                   <li>Babydolls</li>
@@ -398,6 +402,7 @@ const Header = () => {
               </div>
             )}
           </li>
+
           <li
             className="product"
             onMouseEnter={handleJewelleryEnter}
@@ -405,7 +410,7 @@ const Header = () => {
           >
             Jewellery & Accessories
             {jewellery && (
-              <div className="absolute flex text-gray-600">
+              <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
                 <ul className="categories">
                   <li className="text-pink-600 font-semibold">Topwear</li>
                   <li>Tops</li>
@@ -414,7 +419,7 @@ const Header = () => {
                   <li>Jumpsuits</li>
                 </ul>
 
-                <ul className="categories ">
+                <ul className="categories bg-pink-50">
                   <li className="text-pink-600 font-semibold">Bottemwear</li>
                   <li>Jeans</li>
                   <li>Jeggings</li>
@@ -430,7 +435,7 @@ const Header = () => {
                   <li>Briefs</li>
                 </ul>
 
-                <ul className="categories ">
+                <ul className="categories bg-pink-50">
                   <li className="text-pink-600 font-semibold">Sleepwear</li>
                   <li>Nightsuits</li>
                   <li>Babydolls</li>
@@ -438,6 +443,7 @@ const Header = () => {
               </div>
             )}
           </li>
+
           <li
             className="product"
             onMouseEnter={handleBagsEnter}
@@ -445,8 +451,8 @@ const Header = () => {
           >
             Bags & Footwear
             {bags && (
-              <div className="left-0 absolute flex text-gray-600">
-                <ul className="categories">
+              <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
+                <ul className="categories bg-pink-50">
                   <li className="text-pink-600 font-semibold">Topwear</li>
                   <li>Tops</li>
                   <li>Dresses</li>
@@ -463,6 +469,15 @@ const Header = () => {
                   <li>Skirts</li>
                 </ul>
 
+                <ul className="categories  bg-pink-50">
+                  <li className="text-pink-600 font-semibold">Bottemwear</li>
+                  <li>Jeans</li>
+                  <li>Jeggings</li>
+                  <li>Palazzos</li>
+                  <li>Shorts</li>
+                  <li>Skirts</li>
+                </ul>
+
                 <ul className="categories ">
                   <li className="text-pink-600 font-semibold">Innerwear</li>
 
@@ -470,7 +485,7 @@ const Header = () => {
                   <li>Briefs</li>
                 </ul>
 
-                <ul className="categories ">
+                <ul className="categories  bg-pink-50">
                   <li className="text-pink-600 font-semibold">Sleepwear</li>
                   <li>Nightsuits</li>
                   <li>Babydolls</li>
@@ -478,6 +493,7 @@ const Header = () => {
               </div>
             )}
           </li>
+
           <li
             className="product"
             onMouseEnter={handleElectronicEnter}
@@ -485,13 +501,22 @@ const Header = () => {
           >
             Electronic
             {electronic && (
-              <div className="absolute flex text-gray-600">
+              <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
                 <ul className="categories">
                   <li className="text-pink-600 font-semibold">Topwear</li>
                   <li>Tops</li>
                   <li>Dresses</li>
                   <li>Sweaters</li>
                   <li>Jumpsuits</li>
+                </ul>
+
+                <ul className="categories ">
+                  <li className="text-pink-600 font-semibold">Bottemwear</li>
+                  <li>Jeans</li>
+                  <li>Jeggings</li>
+                  <li>Palazzos</li>
+                  <li>Shorts</li>
+                  <li>Skirts</li>
                 </ul>
               </div>
             )}
