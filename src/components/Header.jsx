@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/meeshoLogo.png";
 import "../components/header.css";
 import { Link } from "react-router-dom";
+import cat_1 from "../assets/categories-women.jpg";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -109,7 +110,7 @@ const Header = () => {
             menuOpen ? "block" : "hidden"
           } lg:static lg:bg-transparent lg:p-0`}
         >
-          <ul className="text-center lg:flex items-center text-gray-800">
+          <ul className="text-center lg:flex items-center text-gray-800 ">
             <li className="p-1 xl:p-2 border border-pink-500">
               <i className="fa-solid fa-magnifying-glass px-1 text-gray-500" />
               <input
@@ -138,14 +139,19 @@ const Header = () => {
           </ul>
         </div>
       </nav>
+
       <div className="my-2">
-        <ul className=" text-gray-800 flex justify-evenly border-t-2 border-b-2">
+        <ul className="text-gray-800 overflow-x-auto flex justify-evenly border-t-2 border-b-2">
           <li
             className="product"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            Women Ethic
+            <span className="hidden sm:inline">Women Ethic</span>
+            <div className="w-[55px] sm:hidden border">
+              <img className="w-12 h-12 rounded-full" src={cat_1} />
+              <p className="text-[12px]">kurti & Dre..</p>
+            </div>
             {dropdownOpen && (
               <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
                 <ul className="categories">
@@ -155,7 +161,7 @@ const Header = () => {
                   <li>View All</li>
                 </ul>
 
-                <ul className="categories bg-pink-50">
+                <ul className="categories bg-[#fffafa]">
                   <li className="text-pink-600 font-semibold">Sarees</li>
                   <li>All Sarees</li>
                   <li>Silk Sarees</li>
@@ -176,7 +182,7 @@ const Header = () => {
                   <li>Embroidered kurtis</li>
                 </ul>
 
-                <ul className="categories bg-pink-50">
+                <ul className="categories bg-[#fffafa]">
                   <li className="text-pink-600 font-semibold">
                     Suits & Dress Material
                   </li>
@@ -203,7 +209,12 @@ const Header = () => {
             onMouseEnter={handleWesternEnter}
             onMouseLeave={handleWesternLeave}
           >
-            Women Western
+            <span className="hidden sm:inline"> Women Western</span>
+            <div className="w-[55px] sm:hidden border">
+              <img className="w-12 h-12 rounded-full" src={cat_1} />
+              <p className="text-[12px]">Women Western</p>
+            </div>
+
             {western && (
               <div className="bg-white border mt-4 w-full left-0 absolute flex text-gray-600 shadow-md">
                 <ul className="categories">
@@ -214,7 +225,7 @@ const Header = () => {
                   <li>Jumpsuits</li>
                 </ul>
 
-                <ul className="categories bg-pink-50">
+                <ul className="categories bg-[#fffafa]">
                   <li className="text-pink-600 font-semibold">Bottemwear</li>
                   <li>Jeans</li>
                   <li>Jeggings</li>
@@ -230,7 +241,7 @@ const Header = () => {
                   <li>Briefs</li>
                 </ul>
 
-                <ul className="categories bg-pink-50">
+                <ul className="categories bg-[#fffafa]">
                   <li className="text-pink-600 font-semibold">Sleepwear</li>
                   <li>Nightsuits</li>
                   <li>Babydolls</li>
@@ -244,7 +255,12 @@ const Header = () => {
             onMouseEnter={handleMensEnter}
             onMouseLeave={handleMensLeave}
           >
-            Men
+            <span className="hidden sm:inline">Mens</span>
+            <div className="w-[55px] sm:hidden border">
+              <img className="w-12 h-12 rounded-full" src={cat_1} />
+              <p className="text-[12px]">Mens</p>
+            </div>
+
             {mens && (
               <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
                 <ul className="categories">
@@ -255,7 +271,7 @@ const Header = () => {
                   <li>Jumpsuits</li>
                 </ul>
 
-                <ul className="categories bg-pink-50 ">
+                <ul className="categories bg-[#fffafa]">
                   <li className="text-pink-600 font-semibold">Bottemwear</li>
                   <li>Jeans</li>
                   <li>Jeggings</li>
@@ -271,7 +287,7 @@ const Header = () => {
                   <li>Briefs</li>
                 </ul>
 
-                <ul className="categories bg-pink-50 ">
+                <ul className="categories bg-[#fffafa]">
                   <li className="text-pink-600 font-semibold">Sleepwear</li>
                   <li>Nightsuits</li>
                   <li>Babydolls</li>
@@ -285,7 +301,12 @@ const Header = () => {
             onMouseEnter={handleKidsEnter}
             onMouseLeave={handleKidsLeave}
           >
-            Kids
+            <span className="hidden sm:inline"> Kids</span>
+            <div className="w-[55px] sm:hidden border">
+              <img className="w-12 h-12 rounded-full" src={cat_1} />
+              <p className="text-[12px]">Kids</p>
+            </div>
+
             {kids && (
               <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
                 <ul className="categories">
@@ -296,7 +317,7 @@ const Header = () => {
                   <li>Jumpsuits</li>
                 </ul>
 
-                <ul className="categories bg-pink-50">
+                <ul className="categories bg-[#fffafa]">
                   <li className="text-pink-600 font-semibold">Bottemwear</li>
                   <li>Jeans</li>
                   <li>Jeggings</li>
@@ -312,7 +333,7 @@ const Header = () => {
                   <li>Briefs</li>
                 </ul>
 
-                <ul className="categories bg-pink-50">
+                <ul className="categories bg-[#fffafa]">
                   <li className="text-pink-600 font-semibold">Sleepwear</li>
                   <li>Nightsuits</li>
                   <li>Babydolls</li>
@@ -326,7 +347,12 @@ const Header = () => {
             onMouseEnter={handleKitchenEnter}
             onMouseLeave={handleKitchenLeave}
           >
-            Home & Kitchen
+            <span className="hidden sm:inline"> Home & Kitchen</span>
+            <div className="w-[55px] sm:hidden border">
+              <img className="w-12 h-12 rounded-full" src={cat_1} />
+              <p className="text-[12px]">Kitchen</p>
+            </div>
+
             {kitchen && (
               <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
                 <ul className="categories">
@@ -337,7 +363,7 @@ const Header = () => {
                   <li>Jumpsuits</li>
                 </ul>
 
-                <ul className="categories bg-pink-50">
+                <ul className="categories bg-[#fffafa]">
                   <li className="text-pink-600 font-semibold">Bottemwear</li>
                   <li>Jeans</li>
                   <li>Jeggings</li>
@@ -353,7 +379,7 @@ const Header = () => {
                   <li>Briefs</li>
                 </ul>
 
-                <ul className="categories bg-pink-50">
+                <ul className="categories bg-[#fffafa]">
                   <li className="text-pink-600 font-semibold">Sleepwear</li>
                   <li>Nightsuits</li>
                   <li>Babydolls</li>
@@ -367,7 +393,12 @@ const Header = () => {
             onMouseEnter={handleBeautyEnter}
             onMouseLeave={handleBeautyLeave}
           >
-            Beauty & Health
+            <span className="hidden sm:inline"> Beauty & Health</span>
+            <div className="w-[55px] sm:hidden border">
+              <img className="w-12 h-12 rounded-full" src={cat_1} />
+              <p className="text-[12px]">Beauty</p>
+            </div>
+
             {beauty && (
               <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
                 <ul className="categories">
@@ -378,7 +409,7 @@ const Header = () => {
                   <li>Jumpsuits</li>
                 </ul>
 
-                <ul className="categories bg-pink-50">
+                <ul className="categories bg-[#fffafa]">
                   <li className="text-pink-600 font-semibold">Bottemwear</li>
                   <li>Jeans</li>
                   <li>Jeggings</li>
@@ -394,7 +425,7 @@ const Header = () => {
                   <li>Briefs</li>
                 </ul>
 
-                <ul className="categories bg-pink-50">
+                <ul className="categories bg-[#fffafa]">
                   <li className="text-pink-600 font-semibold">Sleepwear</li>
                   <li>Nightsuits</li>
                   <li>Babydolls</li>
@@ -408,7 +439,12 @@ const Header = () => {
             onMouseEnter={handleJewelleryEnter}
             onMouseLeave={handleJewelleryLeave}
           >
-            Jewellery & Accessories
+            <span className="hidden sm:inline"> Jewellery & Accessories</span>
+            <div className="w-[55px] sm:hidden border">
+              <img className="w-12 h-12 rounded-full" src={cat_1} />
+              <p className="text-[12px]">Jewellery</p>
+            </div>
+
             {jewellery && (
               <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
                 <ul className="categories">
@@ -419,7 +455,7 @@ const Header = () => {
                   <li>Jumpsuits</li>
                 </ul>
 
-                <ul className="categories bg-pink-50">
+                <ul className="categories bg-[#fffafa]">
                   <li className="text-pink-600 font-semibold">Bottemwear</li>
                   <li>Jeans</li>
                   <li>Jeggings</li>
@@ -435,7 +471,7 @@ const Header = () => {
                   <li>Briefs</li>
                 </ul>
 
-                <ul className="categories bg-pink-50">
+                <ul className="categories bg-[#fffafa]">
                   <li className="text-pink-600 font-semibold">Sleepwear</li>
                   <li>Nightsuits</li>
                   <li>Babydolls</li>
@@ -449,7 +485,12 @@ const Header = () => {
             onMouseEnter={handleBagsEnter}
             onMouseLeave={handleBagsLeave}
           >
-            Bags & Footwear
+            <span className="hidden sm:inline"> Bags & Footwear</span>
+            <div className="w-[55px] sm:hidden border">
+              <img className="w-12 h-12 rounded-full" src={cat_1} />
+              <p className="text-[12px]">Footwear</p>
+            </div>
+
             {bags && (
               <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
                 <ul className="categories bg-pink-50">
@@ -469,7 +510,7 @@ const Header = () => {
                   <li>Skirts</li>
                 </ul>
 
-                <ul className="categories  bg-pink-50">
+                <ul className="categories bg-[#fffafa]">
                   <li className="text-pink-600 font-semibold">Bottemwear</li>
                   <li>Jeans</li>
                   <li>Jeggings</li>
@@ -485,7 +526,7 @@ const Header = () => {
                   <li>Briefs</li>
                 </ul>
 
-                <ul className="categories  bg-pink-50">
+                <ul className="categories bg-[#fffafa]">
                   <li className="text-pink-600 font-semibold">Sleepwear</li>
                   <li>Nightsuits</li>
                   <li>Babydolls</li>
@@ -499,7 +540,12 @@ const Header = () => {
             onMouseEnter={handleElectronicEnter}
             onMouseLeave={handleElectronicLeave}
           >
-            Electronic
+            <span className="hidden sm:inline">Electronic</span>
+            <div className="w-[55px] sm:hidden border">
+              <img className="w-12 h-12 rounded-full" src={cat_1} />
+              <p className="text-[12px]">Electronic</p>
+            </div>
+
             {electronic && (
               <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
                 <ul className="categories">
@@ -510,7 +556,7 @@ const Header = () => {
                   <li>Jumpsuits</li>
                 </ul>
 
-                <ul className="categories ">
+                <ul className="categories bg-[#fffafa]">
                   <li className="text-pink-600 font-semibold">Bottemwear</li>
                   <li>Jeans</li>
                   <li>Jeggings</li>
