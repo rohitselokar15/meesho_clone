@@ -58,8 +58,9 @@ const Home = () => {
         <img src={home} className="w-[1000px]" />
       </div> */}
       <div className="mt-10 flex">
-        <div className="border p-2 w-[20%] px-5 mr-2">
-          <ul className="text-[17px] font-semibold">
+        {/* Filter product */}
+        <div className="border p-2 w-[30%] lg:w-[20%] px-5 mr-2">
+          <ul className=" text-[17px] font-semibold">
             <li className="py-4">
               FILTERS <br />
               <span className="text-[13px] text-gray-500">1000+ products</span>
@@ -345,7 +346,7 @@ const Home = () => {
         </div>
 
         {/* product part */}
-        <div className="grid grid-cols-4 gap-4 w-[80%]">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:w-[75%] xl:w-[80%] border">
           {filterProduct.map((items) => (
             <Link to={`/product/${items.id}`} key={items.id}>
               <div className="border rounded-xl h-[25rem] text-gray-500 hover:border-pink-500">
