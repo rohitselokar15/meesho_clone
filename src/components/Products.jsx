@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { ProductContext } from "../context/ProductContext";
 
-const Home = () => {
+const Products = () => {
   const {
     toggleCategory,
     filterProduct,
@@ -346,7 +346,7 @@ const Home = () => {
         </div>
 
         {/* product part */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:w-[75%] xl:w-[80%] border">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:w-[75%] xl:w-[80%]">
           {filterProduct.map((items) => (
             <Link to={`/product/${items.id}`} key={items.id}>
               <div className="border rounded-xl h-[25rem] text-gray-500 hover:border-pink-500">
@@ -378,4 +378,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Products;
