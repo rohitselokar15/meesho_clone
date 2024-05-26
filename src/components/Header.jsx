@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import logo from "../assets/meeshoLogo.png";
 import "../components/header.css";
 import { Link } from "react-router-dom";
-
+import { ProductContext } from "../context/ProductContext";
 
 const Header = () => {
+  const { cart } = useContext(ProductContext);
+
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -13,14 +15,14 @@ const Header = () => {
 
   // Profile
   const [profile, setProfile] = useState();
-  
-  const handleProfileEnter = () =>{
-    setProfile(true);
-  }
 
-  const handleProfileLeave = () =>{
+  const handleProfileEnter = () => {
+    setProfile(true);
+  };
+
+  const handleProfileLeave = () => {
     setProfile(false);
-  }
+  };
 
   return (
     <div className="xl:container xl:mx-auto max-w-7xl sticky top-0 bg-white">
@@ -66,29 +68,33 @@ const Header = () => {
                 <i class="fa-regular fa-user"></i>
                 <p>Profile</p>
               </div>
-              {
-                profile && (
-                  <div className="absolute rounded-b-lg left-[80%] bg-white shadow-md p-5 text-start">
-                    <p className="font-semibold text-[16px]">Hello User</p>
-                    <p className="text-[14px] my-1">Tp access your Messho account</p>
-                    <Link to="/register">
-                    <button className="p-2 font-semibold text-[17px] bg-pink-600 w-full text-white rounded-md my-4">Sign Up</button>
-                    </Link>
-                    <hr/>
-                    <p className="text-[17px] mt-4 font-semibold">My Orders</p>
-                  </div>
-                )
-              }
+              {profile && (
+                <div className="absolute rounded-b-lg left-[80%] bg-white shadow-md p-5 text-start">
+                  <p className="font-semibold text-[16px]">Hello User</p>
+                  <p className="text-[14px] my-1">
+                    Tp access your Messho account
+                  </p>
+                  <Link to="/register">
+                    <button className="p-2 font-semibold text-[17px] bg-pink-600 w-full text-white rounded-md my-4">
+                      Sign Up
+                    </button>
+                  </Link>
+                  <hr />
+                  <p className="text-[17px] mt-4 font-semibold">My Orders</p>
+                </div>
+              )}
             </li>
 
             <li className="lg:px-3 xl:px-6 cursor-pointer">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <p>Cart</p>
+              <Link to="/addtocart">
+                <i className="fa-solid fa-cart-shopping fa-lg"/>
+                {cart.length > 0 && <span className="rounded-full px-1 bg-pink-100 font-semibold text-[13px] mx-1">{cart.length}</span>}
+                <p>Cart</p>
+              </Link>
             </li>
           </ul>
         </div>
       </nav>
-
     </div>
   );
 };
