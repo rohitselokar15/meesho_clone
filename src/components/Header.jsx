@@ -1,11 +1,15 @@
 import React, { useContext, useState } from "react";
 import logo from "../assets/meeshoLogo.png";
 import "../components/header.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ProductContext } from "../context/ProductContext";
+import { AuthContext } from "../context/AuthContext";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   const { cart } = useContext(ProductContext);
+  const { isLoggedIn, LogOut } = useContext(AuthContext);
 
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -22,6 +26,21 @@ const Header = () => {
 
   const handleProfileLeave = () => {
     setProfile(false);
+  };
+
+  // Add to cart check user login or not
+  const checkCart = () => {
+    if (isLoggedIn) {
+      navigate("/addtocart");
+    } else {
+      alert("Login to access cart page");
+      navigate("/register");
+    }
+  };
+
+  const handleLogOut = () => {
+    LogOut();
+    alert("You have been logged out");
   };
 
   return (
@@ -64,31 +83,48 @@ const Header = () => {
               onMouseEnter={handleProfileEnter}
               onMouseLeave={handleProfileLeave}
             >
-              <div>
-                <i class="fa-regular fa-user"></i>
-                <p>Profile</p>
-              </div>
-              {profile && (
-                <div className="absolute rounded-b-lg left-[80%] bg-white shadow-md p-5 text-start">
-                  <p className="font-semibold text-[16px]">Hello User</p>
-                  <p className="text-[14px] my-1">
-                    Tp access your Messho account
-                  </p>
-                  <Link to="/register">
-                    <button className="p-2 font-semibold text-[17px] bg-pink-600 w-full text-white rounded-md my-4">
-                      Sign Up
-                    </button>
-                  </Link>
-                  <hr />
-                  <p className="text-[17px] mt-4 font-semibold">My Orders</p>
-                </div>
+              {isLoggedIn ? (
+                <button
+                  className="p-2 font-semibold text-[17px] bg-pink-600 w-full text-white rounded-md my-4"
+                  onClick={handleLogOut}
+                >
+                  Log Out
+                </button>
+              ) : (
+                <>
+                  <div>
+                    <i className="fa-regular fa-user" />
+                    <p>Profile</p>
+                  </div>
+                  {profile && (
+                    <div className="absolute rounded-b-lg left-[80%] bg-white shadow-md p-5 text-start">
+                      <p className="font-semibold text-[16px]">Hello User</p>
+                      <p className="text-[14px] my-1">
+                        Tp access your Messho account
+                      </p>
+                      <Link to="/register">
+                        <button className="p-2 font-semibold text-[17px] bg-pink-600 w-full text-white rounded-md my-4">
+                          Sign Up
+                        </button>
+                      </Link>
+                      <hr />
+                      <p className="text-[17px] mt-4 font-semibold">
+                        My Orders
+                      </p>
+                    </div>
+                  )}
+                </>
               )}
             </li>
 
-            <li className="lg:px-3 xl:px-6 cursor-pointer">
+            <li className="lg:px-3 xl:px-6 cursor-pointer" onClick={checkCart}>
               <Link to="/addtocart">
-                <i className="fa-solid fa-cart-shopping fa-lg"/>
-                {cart.length > 0 && <span className="rounded-full px-1 bg-pink-100 font-semibold text-[13px] mx-1">{cart.length}</span>}
+                <i className="fa-solid fa-cart-shopping fa-lg" />
+                {cart.length > 0 && (
+                  <span className="rounded-full px-1 bg-pink-100 font-semibold text-[13px] mx-1">
+                    {cart.length}
+                  </span>
+                )}
                 <p>Cart</p>
               </Link>
             </li>

@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import productsData from "../../product.json";
 import filterProductByCategory from "../utils/FilterProduct";
-
+import { AuthContext } from "./AuthContext";
 export const ProductContext = createContext();
 
 export const ProductProvider = ({ children }) => {
@@ -12,6 +12,7 @@ export const ProductProvider = ({ children }) => {
   const [selectRating, setSelectRating] = useState(new Set());
   const [selectGender, setSelectGender] = useState([]);
   const [cart, setCart] = useState([]);
+  const { isLoggedIn } = useContext(AuthContext);
 
   useEffect(() => {
     setProducts(productsData);
@@ -65,17 +66,21 @@ export const ProductProvider = ({ children }) => {
   };
 
   const addToCart = (product) => {
-    setCart((prevCart) => {
-      const existingItem = prevCart.find((item) => item.id === product.id);
-      if (existingItem) {
-        return prevCart.map((item) =>
-          item.id === product.id
-            ? { ...item, quantity: item.quantity + 1 }
-            : item
-        );
-      }
-      return [...prevCart, { ...product, quantity: 1 }];
-    });
+    if (isLoggedIn) {
+      setCart((prevCart) => {
+        const existingItem = prevCart.find((item) => item.id === product.id);
+        if (existingItem) {
+          return prevCart.map((item) =>
+            item.id === product.id
+              ? { ...item, quantity: item.quantity + 1 }
+              : item
+          );
+        }
+        return [...prevCart, { ...product, quantity: 1 }];
+      });
+    } else {
+      alert("Please Login to add items to cart");
+    }
   };
 
   const increaseQuantity = (productId) => {

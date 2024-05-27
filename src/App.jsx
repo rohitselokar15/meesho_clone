@@ -7,19 +7,22 @@ import ProductDetail from "./pages/ProductDetail";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import CartPage from "./pages/CartPage";
+import { AuthProvider } from "./context/AuthContext";
 
 const App = () => {
   return (
-    <ProductProvider>
-      <Header />
-      {/* <Home/> */}
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/register" element={<Register/>}/>
-        <Route path="/product/:id" element={<ProductDetail />} />
-        <Route path="/addtocart" element={<CartPage/>}/>
-      </Routes>
-    </ProductProvider>
+    <AuthProvider>
+      <ProductProvider>
+        <Header />
+        {/* <Home/> */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/addtocart" element={<CartPage />} />
+        </Routes>
+      </ProductProvider>
+    </AuthProvider>
 
     // <Login/>
   );
