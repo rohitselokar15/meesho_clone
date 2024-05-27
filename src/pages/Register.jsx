@@ -1,20 +1,20 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import emailjs from "emailjs-com";
 import register_image from "../assets/register.jpg";
 import { useNavigate } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
 
 const Register = () => {
-
   const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [verificationCode, setVerificationCode] = useState("");
   const [codeSent, setCodeSent] = useState(false);
   const [generatedCode, setGeneratedCode] = useState("");
+  const { logIn } = useContext(AuthContext);
 
   const handleSendCode = () => {
-
-    if(!email){
+    if (!email) {
       alert("Please enter your mail");
       return;
     }
@@ -46,8 +46,8 @@ const Register = () => {
   const handleVerifyCode = () => {
     if (verificationCode === generatedCode) {
       alert("Email Verified");
+      logIn();
       navigate("/");
-      
     } else {
       alert("Invalid verification code");
     }
@@ -89,7 +89,6 @@ const Register = () => {
                 value={verificationCode}
                 onChange={(e) => setVerificationCode(e.target.value)}
                 className="w-full border-b-2 my-4"
-               
               />
               <button
                 onClick={handleVerifyCode}
