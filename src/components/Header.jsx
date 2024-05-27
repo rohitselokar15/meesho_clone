@@ -9,17 +9,15 @@ const Header = () => {
   const navigate = useNavigate();
 
   const { cart } = useContext(ProductContext);
-  const { isLoggedIn, LogOut } = useContext(AuthContext);
-
+  const { isLoggedIn, logOut, email } = useContext(AuthContext);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [profile, setProfile] = useState();
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
   // Profile
-  const [profile, setProfile] = useState();
-
   const handleProfileEnter = () => {
     setProfile(true);
   };
@@ -39,8 +37,9 @@ const Header = () => {
   };
 
   const handleLogOut = () => {
-    LogOut();
+    logOut();
     alert("You have been logged out");
+    navigate("/register");
   };
 
   return (
@@ -84,12 +83,32 @@ const Header = () => {
               onMouseLeave={handleProfileLeave}
             >
               {isLoggedIn ? (
-                <button
-                  className="p-2 font-semibold text-[17px] bg-pink-600 w-full text-white rounded-md my-4"
-                  onClick={handleLogOut}
-                >
-                  Log Out
-                </button>
+                <>
+                  <div>
+                    <i className="fa-regular fa-user" />
+                    <p>Profile</p>
+                  </div>
+                  {profile && (
+                    <div className="absolute rounded-b-lg left-[80%] bg-white shadow-md p-5 text-start">
+                      <p className="font-semibold text-[16px]">Hello {email}</p>
+                      <p className="text-[14px] my-1">
+                        Tp access your Messho account
+                      </p>
+
+                      <button
+                        className="p-2 font-semibold text-[17px] bg-pink-600 w-full text-white rounded-md my-4"
+                        onClick={handleLogOut}
+                      >
+                        Log Out
+                      </button>
+
+                      <hr />
+                      <p className="text-[17px] mt-4 font-semibold">
+                        My Orders
+                      </p>
+                    </div>
+                  )}
+                </>
               ) : (
                 <>
                   <div>

@@ -1,21 +1,9 @@
 import React, { useContext } from "react";
 import { ProductContext } from "../context/ProductContext";
-import { AuthContext } from "../context/AuthContext";
 
 const CartPage = () => {
   const { cart, increaseQuantity, decreaseQuantity, removeCart } =
     useContext(ProductContext);
-
-  const {isLoggedIn} = useContext(AuthContext);
-
-  const handleCheckout = () =>{
-    if(isLoggedIn){
-      //proceed to checkout
-    }
-    else{
-      alert("Please login to proceed to checkout");
-    }
-  };
 
   const totalProductPrice = cart.reduce(
     (total, item) => total + item.price * item.quantity,
@@ -100,8 +88,7 @@ const CartPage = () => {
           <p className="text-gray-600 text-[11px] my-2 mt-12">
             Clicking on 'Continue' will not be deduct any money
           </p>
-          <button className="bg-pink-600 text-[18px] p-2 w-full rounded-md text-white"
-          onClick={handleCheckout}>
+          <button className="bg-pink-600 text-[18px] p-2 w-full rounded-md text-white">
             Continue
           </button>
         </div>
