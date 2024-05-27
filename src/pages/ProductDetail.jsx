@@ -1,13 +1,35 @@
 import React from "react";
 import { useContext } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { ProductContext } from "../context/ProductContext";
+import { AuthContext } from "../context/AuthContext";
 
 const ProductDetail = () => {
-  const { products,addToCart } = useContext(ProductContext);
+  const navigate = useNavigate();
 
+  const { products, addToCart } = useContext(ProductContext);
+  const { isLoggedIn } = useContext(AuthContext);
   const { id } = useParams();
+
   const product = products.find((item) => item.id === parseInt(id));
+
+  const handleAddToCart = () => {
+    if (isLoggedIn) {
+      addToCart(product);
+    } else {
+      alert("Please login to add items in cart");
+      navigate("/register");
+    }
+  };
+
+  const handleBuyNow = () => {
+    if (isLoggedIn) {
+      navigate("/addToCart");
+    } else {
+      alert("Please login to Proceed Payment");
+      navigate("/register");
+    }
+  };
 
   if (!product) {
     return <div>Product not found</div>;
@@ -38,12 +60,16 @@ const ProductDetail = () => {
           <p className="mx-4">{product.rating.count} Reviews</p>
         </div>
         <div className="my-6">
-          <button className="border p-2.5 px-8 text-pink-700 border-pink-700 rounded-md"
-          onClick={()=>addToCart(product)}
+          <button
+            className="border p-2.5 px-8 text-pink-700 border-pink-700 rounded-md"
+            onClick={handleAddToCart}
           >
             <i className="fa-solid fa-cart-shopping mx-2"></i>Add to Cart
           </button>
-          <button className="border p-2.5  px-12 mx-4 bg-pink-700 rounded-md text-white">
+          <button
+            className="border p-2.5  px-12 mx-4 bg-pink-700 rounded-md text-white"
+            onClick={handleBuyNow}
+          >
             Buy Now
           </button>
         </div>
