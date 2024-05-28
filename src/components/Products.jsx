@@ -98,18 +98,20 @@ const Products = () => {
                     <input
                       type="checkbox"
                       className="mx-2"
-                      onClick={() => handleCategoryChange("men")}
+                      onClick={() => handleCategoryChange("women-t-shirts")}
                     />
-                    men's
+                    Women's T-shirts
                   </p>
+
                   <p className="category-checkbox">
                     <input
                       type="checkbox"
                       className="mx-2"
-                      onClick={() => handleCategoryChange("women")}
+                      onClick={() => handleCategoryChange("men-t-shirts")}
                     />
-                    women's
+                    men's T-shirts
                   </p>
+
                   <p className="category-checkbox">
                     <input
                       type="checkbox"
@@ -118,13 +120,41 @@ const Products = () => {
                     />
                     electronics
                   </p>
+
                   <p className="category-checkbox">
                     <input
                       type="checkbox"
                       className="mx-2"
-                      onClick={() => handleCategoryChange("jewelery")}
+                      onClick={() => handleCategoryChange("jewelerys")}
                     />
                     jewelery
+                  </p>
+
+                  <p className="category-checkbox">
+                    <input
+                      type="checkbox"
+                      className="mx-2"
+                      onClick={() => handleCategoryChange("bags")}
+                    />
+                    Bags
+                  </p>
+
+                  <p className="category-checkbox">
+                    <input
+                      type="checkbox"
+                      className="mx-2"
+                      onClick={() => handleCategoryChange("hair-oil")}
+                    />
+                    Hair Oils
+                  </p>
+
+                  <p className="category-checkbox">
+                    <input
+                      type="checkbox"
+                      className="mx-2"
+                      onClick={() => handleCategoryChange("sunglass")}
+                    />
+                    Sunglasses
                   </p>
                 </div>
               )}

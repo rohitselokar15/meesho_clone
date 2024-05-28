@@ -89,7 +89,7 @@ const CartPage = () => {
             Clicking on 'Continue' will not be deduct any money
           </p>
           <button className="bg-pink-600 text-[18px] p-2 w-full rounded-md text-white">
-            Continue
+            Place Order
           </button>
         </div>
       </div>
