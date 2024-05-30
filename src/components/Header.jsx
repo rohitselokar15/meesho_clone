@@ -56,12 +56,12 @@ const Header = () => {
         </div>
 
         <div
-          className={`lg:flex absolute top-16 left-0 right-0 rounded-xl ${
+          className={`bg-pink-100 lg:flex absolute top-16 left-0 right-0 rounded-xl ${
             menuOpen ? "block" : "hidden"
           } lg:static lg:bg-transparent lg:p-0`}
         >
-          <ul className="text-center lg:flex items-center text-gray-800 ">
-            <li className="p-1 xl:p-2 border border-pink-500">
+          <ul className="text-center lg:flex border items-center text-gray-800 ">
+            <li className="hidden lg:inline p-1 xl:p-2 border border-pink-500">
               <i className="fa-solid fa-magnifying-glass px-1 text-gray-500" />
               <input
                 type="text"

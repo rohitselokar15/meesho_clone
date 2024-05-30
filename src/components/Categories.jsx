@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import cat_1 from "../assets/categories-women.jpg";
-import "../components/header.css"
+import "../components/header.css";
 
 const Categories = () => {
   const [dropdownOpen, setdropdownOpen] = useState(false);
@@ -86,16 +86,27 @@ const Categories = () => {
 
   return (
     <div className="my-2">
-      <ul className="text-gray-800 overflow-x-auto flex justify-evenly border-t-2 border-b-2">
+      <p className="lg:hidden  mx-6 rounded-md border flex items-center justify-center border-gray-300">
+        <i className="fa-solid fa-magnifying-glass px-2 text-gray-500" />
+        <input
+          type="text"
+          placeholder="Try Saree,Kurti or Search by Product Code"
+          className="w-full p-2"
+        />
+      </p>
+      <p className="lg:hidden bg-gray-100 text-[16px] text-gray-700 text-center my-2 p-1.5">
+        Add delivery location to check extra discount{" "}
+      </p>
+      <ul className="text-gray-800 overflow-x-auto flex justify-evenly md:border-t-2 md:border-b-2">
         <li
           className="product"
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           <span className="hidden sm:inline">Women Ethic</span>
-          <div className="w-[55px] sm:hidden border">
+          <div className="w-[55px] sm:hidden flex flex-col justify-center items-center border">
             <img className="w-12 h-12 rounded-full" src={cat_1} />
-            <p className="text-[12px]">kurti & Dre..</p>
+            <p className="text-[12px] font-semibold mt-1">kurti & Dre..</p>
           </div>
           {dropdownOpen && (
             <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
@@ -153,9 +164,9 @@ const Categories = () => {
           onMouseLeave={handleWesternLeave}
         >
           <span className="hidden sm:inline"> Women Western</span>
-          <div className="w-[55px] sm:hidden border">
+          <div className="w-[55px] sm:hidden flex flex-col justify-center items-center border">
             <img className="w-12 h-12 rounded-full" src={cat_1} />
-            <p className="text-[12px]">Women Western</p>
+            <p className="text-[12px] font-semibold mt-1">Women Western</p>
           </div>
 
           {western && (
@@ -199,9 +210,9 @@ const Categories = () => {
           onMouseLeave={handleMensLeave}
         >
           <span className="hidden sm:inline">Mens</span>
-          <div className="w-[55px] sm:hidden border">
+          <div className="w-[55px] sm:hidden flex flex-col justify-center items-center border">
             <img className="w-12 h-12 rounded-full" src={cat_1} />
-            <p className="text-[12px]">Mens</p>
+            <p className="text-[12px] font-semibold mt-1">Mens</p>
           </div>
 
           {mens && (
@@ -245,9 +256,9 @@ const Categories = () => {
           onMouseLeave={handleKidsLeave}
         >
           <span className="hidden sm:inline"> Kids</span>
-          <div className="w-[55px] sm:hidden border">
+          <div className="w-[55px] sm:hidden flex flex-col justify-center items-center border">
             <img className="w-12 h-12 rounded-full" src={cat_1} />
-            <p className="text-[12px]">Kids</p>
+            <p className="text-[12px] font-semibold mt-1">Kids</p>
           </div>
 
           {kids && (
@@ -291,9 +302,9 @@ const Categories = () => {
           onMouseLeave={handleKitchenLeave}
         >
           <span className="hidden sm:inline"> Home & Kitchen</span>
-          <div className="w-[55px] sm:hidden border">
+          <div className="w-[55px] sm:hidden flex flex-col justify-center items-center border">
             <img className="w-12 h-12 rounded-full" src={cat_1} />
-            <p className="text-[12px]">Kitchen</p>
+            <p className="text-[12px] font-semibold mt-1">Kitchen</p>
           </div>
 
           {kitchen && (
@@ -337,9 +348,9 @@ const Categories = () => {
           onMouseLeave={handleBeautyLeave}
         >
           <span className="hidden sm:inline"> Beauty & Health</span>
-          <div className="w-[55px] sm:hidden border">
+          <div className="w-[55px] sm:hidden flex flex-col justify-center items-center border">
             <img className="w-12 h-12 rounded-full" src={cat_1} />
-            <p className="text-[12px]">Beauty</p>
+            <p className="text-[12px] font-semibold mt-1">Beauty</p>
           </div>
 
           {beauty && (
@@ -383,9 +394,9 @@ const Categories = () => {
           onMouseLeave={handleJewelleryLeave}
         >
           <span className="hidden sm:inline"> Jewellery & Accessories</span>
-          <div className="w-[55px] sm:hidden border">
+          <div className="w-[55px] sm:hidden flex flex-col justify-center items-center border">
             <img className="w-12 h-12 rounded-full" src={cat_1} />
-            <p className="text-[12px]">Jewellery</p>
+            <p className="text-[12px] font-semibold mt-1">Jewellery</p>
           </div>
 
           {jewellery && (
@@ -429,9 +440,9 @@ const Categories = () => {
           onMouseLeave={handleBagsLeave}
         >
           <span className="hidden sm:inline"> Bags & Footwear</span>
-          <div className="w-[55px] sm:hidden border">
+          <div className="w-[55px] sm:hidden flex flex-col justify-center items-center border">
             <img className="w-12 h-12 rounded-full" src={cat_1} />
-            <p className="text-[12px]">Footwear</p>
+            <p className="text-[12px] font-semibold mt-1">Footwear</p>
           </div>
 
           {bags && (
@@ -484,9 +495,9 @@ const Categories = () => {
           onMouseLeave={handleElectronicLeave}
         >
           <span className="hidden sm:inline">Electronic</span>
-          <div className="w-[55px] sm:hidden border">
+          <div className="w-[55px] sm:hidden flex flex-col justify-center items-center border">
             <img className="w-12 h-12 rounded-full" src={cat_1} />
-            <p className="text-[12px]">Electronic</p>
+            <p className="text-[12px] font-semibold mt-1">Electronic</p>
           </div>
 
           {electronic && (

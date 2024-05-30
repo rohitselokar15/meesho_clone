@@ -57,15 +57,15 @@ const Products = () => {
       {/* <div className=" flex justify-center">
         <img src={home} className="w-[1000px]" />
       </div> */}
-      <div className="mt-10 flex">
+      <div className="md:mt-10 md:flex">
         {/* Filter product */}
-        <div className="border p-2 w-[30%] lg:w-[20%] px-5 mr-2">
-          <ul className=" text-[17px] font-semibold">
-            <li className="py-4">
+        <div className="p-2 md:w-[30%] lg:w-[20%] px-5 mr-2">
+          <ul className="text-[17px] font-semibold grid grid-cols-2 gap-2 md:grid-cols-1">
+            <li className="hidden md:inline py-4">
               FILTERS <br />
               <span className="text-[13px] text-gray-500">1000+ products</span>
             </li>
-            <hr />
+            <hr className="hidden md:inline" />
 
             <li className="py-5 cursor-pointer">
               <div
@@ -159,7 +159,7 @@ const Products = () => {
                 </div>
               )}
             </li>
-            <hr />
+            <hr className="hidden md:inline" />
 
             <li className="py-5 cursor-pointer">
               <div
@@ -187,7 +187,7 @@ const Products = () => {
                 </span>
               </div>
               {gender && (
-                <div className="mt-4 flex flex-wrap gap-2">
+                <div className="mt-4 grid gap-2">
                   <button
                     className="category-button"
                     onClick={() => handleGenderChange("boys")}
@@ -215,7 +215,7 @@ const Products = () => {
                 </div>
               )}
             </li>
-            <hr />
+            <hr className="hidden md:inline" />
 
             <li className="py-5 cursor-pointer">
               <div
@@ -307,7 +307,7 @@ const Products = () => {
                 </div>
               )}
             </li>
-            <hr />
+            <hr className="hidden md:inline" />
 
             <li className="py-5 cursor-pointer">
               <div
@@ -371,15 +371,15 @@ const Products = () => {
                 </div>
               )}
             </li>
-            <hr />
+            <hr className="hidden md:inline" />
           </ul>
         </div>
 
         {/* product part */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:w-[75%] xl:w-[80%]">
+        <div className="grid sm:gap-0 grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:gap-2 md:w-[75%] xl:w-[80%]">
           {filterProduct.map((items) => (
             <Link to={`/product/${items.id}`} key={items.id}>
-              <div className="border rounded-xl h-[25rem] text-gray-500 hover:border-pink-500">
+              <div className="border md:rounded-xl h-auto md:h-[25rem] text-gray-500 hover:border-pink-500">
                 <div className="card-img flex justify-center">
                   <img src={items.image} className="w-[120px] h-[11rem] py-6" />
                 </div>

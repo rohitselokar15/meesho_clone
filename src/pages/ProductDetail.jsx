@@ -36,11 +36,11 @@ const ProductDetail = () => {
   }
 
   return (
-    <div className="p-10 flex justify-center">
-      <div className="border p-6 mr-6">
-        <img src={product.image} className="w-[350px]" />
+    <div className="mt-6 md:p-10 md:flex justify-center items-start">
+      <div className="md:border flex justify-center md:p-6 md:mr-2">
+        <img src={product.image} className="w-[200px] md:w-[300px]" />
       </div>
-      <div className="border w-[600px] p-6 text-gray-700 font-semibold">
+      <div className="md:border md:w-[600px] p-4 md:p-6 text-gray-700 font-semibold">
         <p className="text-[23px] py-4">{product.title}</p>
         <p className="text-[16px] py-6">{product.description}</p>
         <p className="text-[30px] text-black font-semibold py-1">
@@ -61,7 +61,7 @@ const ProductDetail = () => {
         </div>
         <div className="my-6">
           <button
-            className="border p-2.5 px-8 text-pink-700 border-pink-700 rounded-md"
+            className="border p-2.5 lg:px-8 text-pink-700 border-pink-700 rounded-md"
             onClick={handleAddToCart}
           >
             <i className="fa-solid fa-cart-shopping mx-2"></i>Add to Cart
