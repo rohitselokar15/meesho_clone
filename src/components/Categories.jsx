@@ -85,8 +85,8 @@ const Categories = () => {
   };
 
   return (
-    <div className="my-2">
-      <p className="lg:hidden  mx-6 rounded-md border flex items-center justify-center border-gray-300">
+    <div className="my-2 ">
+      <p className="lg:hidden  mx-6 md:w-[70%] md:mx-24 rounded-md border flex items-center justify-center border-gray-300">
         <i className="fa-solid fa-magnifying-glass px-2 text-gray-500" />
         <input
           type="text"
@@ -94,8 +94,9 @@ const Categories = () => {
           className="w-full p-2"
         />
       </p>
-      <p className="lg:hidden bg-gray-100 text-[16px] text-gray-700 text-center my-2 p-1.5">
-        Add delivery location to check extra discount{" "}
+      <p className="lg:hidden bg-gray-100 text-[16px] text-gray-700 text-center my-2 p-1.5 md:mx-48">
+        <i className="fa-solid fa-location-dot mx-2" /> Add delivery location to
+        check extra discount{" "}
       </p>
       <ul className="text-gray-800 overflow-x-auto flex justify-evenly md:border-t-2 md:border-b-2">
         <li
@@ -109,7 +110,7 @@ const Categories = () => {
             <p className="text-[12px] font-semibold mt-1">kurti & Dre..</p>
           </div>
           {dropdownOpen && (
-            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
+            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute md:flex text-gray-600">
               <ul className="categories">
                 <li className="text-pink-600 font-semibold">All Women Ethic</li>
                 <li>View All</li>
@@ -170,7 +171,7 @@ const Categories = () => {
           </div>
 
           {western && (
-            <div className="bg-white border mt-4 w-full left-0 absolute flex text-gray-600 shadow-md">
+            <div className="bg-white border mt-4 w-full left-0 absolute md:flex text-gray-600 shadow-md">
               <ul className="categories">
                 <li className="text-pink-600 font-semibold">Topwear</li>
                 <li>Tops</li>
@@ -216,35 +217,42 @@ const Categories = () => {
           </div>
 
           {mens && (
-            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
+            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute md:flex text-gray-600">
               <ul className="categories">
-                <li className="text-pink-600 font-semibold">Topwear</li>
-                <li>Tops</li>
-                <li>Dresses</li>
-                <li>Sweaters</li>
-                <li>Jumpsuits</li>
+                <li className="text-pink-600 font-semibold">Top Wear</li>
+                <li>All Top</li>
+                <li>T Shirts</li>
+                <li>Shirts</li>
               </ul>
 
               <ul className="categories bg-[#fffafa]">
-                <li className="text-pink-600 font-semibold">Bottemwear</li>
+                <li className="text-pink-600 font-semibold">Bottom Wear</li>
+                <li>Track Pants</li>
                 <li>Jeans</li>
-                <li>Jeggings</li>
-                <li>Palazzos</li>
-                <li>Shorts</li>
-                <li>Skirts</li>
+                <li>Troisers</li>
               </ul>
 
               <ul className="categories ">
-                <li className="text-pink-600 font-semibold">Innerwear</li>
-
-                <li>Bra</li>
-                <li>Briefs</li>
+                <li className="text-pink-600 font-semibold">Men Accessories</li>
+                <li>Watches</li>
+                <li>Belts</li>
+                <li>Wallets</li>
+                <li>Jewellery</li>
+                <li>Sunglasses</li>
+                <li>Bags</li>
               </ul>
 
               <ul className="categories bg-[#fffafa]">
-                <li className="text-pink-600 font-semibold">Sleepwear</li>
-                <li>Nightsuits</li>
-                <li>Babydolls</li>
+                <li className="text-pink-600 font-semibold">Men Footwear</li>
+                <li>Casual Shoes</li>
+                <li>Sport Shoes</li>
+                <li>Sandaks</li>
+              </ul>
+
+              <ul className="categories">
+                <li className="text-pink-600 font-semibold">Ethics Wear</li>
+                <li>Men Kurtas</li>
+                <li>Ethics Jackets</li>
               </ul>
             </div>
           )}
@@ -262,7 +270,7 @@ const Categories = () => {
           </div>
 
           {kids && (
-            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
+            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute md:flex text-gray-600">
               <ul className="categories">
                 <li className="text-pink-600 font-semibold">Topwear</li>
                 <li>Tops</li>
@@ -308,35 +316,42 @@ const Categories = () => {
           </div>
 
           {kitchen && (
-            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
+            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute md:flex text-gray-600">
               <ul className="categories">
-                <li className="text-pink-600 font-semibold">Topwear</li>
-                <li>Tops</li>
-                <li>Dresses</li>
-                <li>Sweaters</li>
-                <li>Jumpsuits</li>
+                <li className="text-pink-600 font-semibold">Top Wear</li>
+                <li>All Top</li>
+                <li>T Shirts</li>
+                <li>Shirts</li>
               </ul>
 
               <ul className="categories bg-[#fffafa]">
-                <li className="text-pink-600 font-semibold">Bottemwear</li>
+                <li className="text-pink-600 font-semibold">Bottom Wear</li>
+                <li>Track Pants</li>
                 <li>Jeans</li>
-                <li>Jeggings</li>
-                <li>Palazzos</li>
-                <li>Shorts</li>
-                <li>Skirts</li>
+                <li>Troisers</li>
               </ul>
 
               <ul className="categories ">
-                <li className="text-pink-600 font-semibold">Innerwear</li>
-
-                <li>Bra</li>
-                <li>Briefs</li>
+                <li className="text-pink-600 font-semibold">Men Accessories</li>
+                <li>Watches</li>
+                <li>Belts</li>
+                <li>Wallets</li>
+                <li>Jewellery</li>
+                <li>Sunglasses</li>
+                <li>Bags</li>
               </ul>
 
               <ul className="categories bg-[#fffafa]">
-                <li className="text-pink-600 font-semibold">Sleepwear</li>
-                <li>Nightsuits</li>
-                <li>Babydolls</li>
+                <li className="text-pink-600 font-semibold">Men Footwear</li>
+                <li>Casual Shoes</li>
+                <li>Sport Shoes</li>
+                <li>Sandaks</li>
+              </ul>
+
+              <ul className="categories">
+                <li className="text-pink-600 font-semibold">Ethics Wear</li>
+                <li>Men Kurtas</li>
+                <li>Ethics Jackets</li>
               </ul>
             </div>
           )}
@@ -354,7 +369,7 @@ const Categories = () => {
           </div>
 
           {beauty && (
-            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
+            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute md:flex text-gray-600">
               <ul className="categories">
                 <li className="text-pink-600 font-semibold">Topwear</li>
                 <li>Tops</li>
@@ -400,35 +415,42 @@ const Categories = () => {
           </div>
 
           {jewellery && (
-            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
+            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute md:flex text-gray-600">
               <ul className="categories">
-                <li className="text-pink-600 font-semibold">Topwear</li>
-                <li>Tops</li>
-                <li>Dresses</li>
-                <li>Sweaters</li>
-                <li>Jumpsuits</li>
+                <li className="text-pink-600 font-semibold">Top Wear</li>
+                <li>All Top</li>
+                <li>T Shirts</li>
+                <li>Shirts</li>
               </ul>
 
               <ul className="categories bg-[#fffafa]">
-                <li className="text-pink-600 font-semibold">Bottemwear</li>
+                <li className="text-pink-600 font-semibold">Bottom Wear</li>
+                <li>Track Pants</li>
                 <li>Jeans</li>
-                <li>Jeggings</li>
-                <li>Palazzos</li>
-                <li>Shorts</li>
-                <li>Skirts</li>
+                <li>Troisers</li>
               </ul>
 
               <ul className="categories ">
-                <li className="text-pink-600 font-semibold">Innerwear</li>
-
-                <li>Bra</li>
-                <li>Briefs</li>
+                <li className="text-pink-600 font-semibold">Men Accessories</li>
+                <li>Watches</li>
+                <li>Belts</li>
+                <li>Wallets</li>
+                <li>Jewellery</li>
+                <li>Sunglasses</li>
+                <li>Bags</li>
               </ul>
 
               <ul className="categories bg-[#fffafa]">
-                <li className="text-pink-600 font-semibold">Sleepwear</li>
-                <li>Nightsuits</li>
-                <li>Babydolls</li>
+                <li className="text-pink-600 font-semibold">Men Footwear</li>
+                <li>Casual Shoes</li>
+                <li>Sport Shoes</li>
+                <li>Sandaks</li>
+              </ul>
+
+              <ul className="categories">
+                <li className="text-pink-600 font-semibold">Ethics Wear</li>
+                <li>Men Kurtas</li>
+                <li>Ethics Jackets</li>
               </ul>
             </div>
           )}
@@ -446,7 +468,7 @@ const Categories = () => {
           </div>
 
           {bags && (
-            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
+            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute md:flex text-gray-600">
               <ul className="categories bg-pink-50">
                 <li className="text-pink-600 font-semibold">Topwear</li>
                 <li>Tops</li>
@@ -501,7 +523,7 @@ const Categories = () => {
           </div>
 
           {electronic && (
-            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute flex text-gray-600">
+            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute md:flex text-gray-600">
               <ul className="categories">
                 <li className="text-pink-600 font-semibold">Topwear</li>
                 <li>Tops</li>

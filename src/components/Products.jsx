@@ -60,12 +60,12 @@ const Products = () => {
       <div className="md:mt-10 md:flex">
         {/* Filter product */}
         <div className="p-2 md:w-[30%] lg:w-[20%] px-5 mr-2">
-          <ul className="text-[17px] font-semibold grid grid-cols-2 gap-2 md:grid-cols-1">
-            <li className="hidden md:inline py-4">
+          <ul className="text-[17px] font-semibold">
+            <li className="py-4">
               FILTERS <br />
               <span className="text-[13px] text-gray-500">1000+ products</span>
             </li>
-            <hr className="hidden md:inline" />
+            <hr />
 
             <li className="py-5 cursor-pointer">
               <div
@@ -159,7 +159,7 @@ const Products = () => {
                 </div>
               )}
             </li>
-            <hr className="hidden md:inline" />
+            <hr />
 
             <li className="py-5 cursor-pointer">
               <div
@@ -215,7 +215,8 @@ const Products = () => {
                 </div>
               )}
             </li>
-            <hr className="hidden md:inline" />
+            <hr />
+            {/* <hr className="hidden md:inline" /> */}
 
             <li className="py-5 cursor-pointer">
               <div
@@ -307,7 +308,7 @@ const Products = () => {
                 </div>
               )}
             </li>
-            <hr className="hidden md:inline" />
+            <hr />
 
             <li className="py-5 cursor-pointer">
               <div
