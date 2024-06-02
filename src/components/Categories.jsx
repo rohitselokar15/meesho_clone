@@ -85,8 +85,8 @@ const Categories = () => {
   };
 
   return (
-    <div className="my-2 ">
-      <p className="lg:hidden  mx-6 md:w-[70%] md:mx-24 rounded-md border flex items-center justify-center border-gray-300">
+    <div className="container mx-auto max-w-[1450px] bg-white sticky top-16">
+      <p className="md:hidden  mx-6 md:w-[70%] md:mx-24 rounded-md border flex items-center justify-center border-gray-300">
         <i className="fa-solid fa-magnifying-glass px-2 text-gray-500" />
         <input
           type="text"
@@ -94,11 +94,11 @@ const Categories = () => {
           className="w-full p-2"
         />
       </p>
-      <p className="lg:hidden bg-gray-100 text-[16px] text-gray-700 text-center my-2 p-1.5 md:mx-48">
+      <p className="md:hidden bg-gray-100 text-[16px] text-gray-700 text-center my-2 p-1.5 md:mx-48">
         <i className="fa-solid fa-location-dot mx-2" /> Add delivery location to
         check extra discount{" "}
       </p>
-      <ul className="text-gray-800 overflow-x-auto flex justify-evenly md:border-t-2 md:border-b-2">
+      <ul className="text-gray-800 overflow-x-auto flex justify-evenly items-center md:border-t-2 md:border-b-2">
         <li
           className="product"
           onMouseEnter={handleMouseEnter}
@@ -217,7 +217,7 @@ const Categories = () => {
           </div>
 
           {mens && (
-            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute md:flex text-gray-600">
+            <div className="bg-white w-full mt-9 xl:mt-4 left-0 border border-pink-100 shadow-md absolute md:flex text-gray-600">
               <ul className="categories">
                 <li className="text-pink-600 font-semibold">Top Wear</li>
                 <li>All Top</li>
@@ -270,7 +270,7 @@ const Categories = () => {
           </div>
 
           {kids && (
-            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute md:flex text-gray-600">
+            <div className="bg-white w-full mt-9 xl:mt-4 left-0 border border-pink-100 shadow-md absolute md:flex text-gray-600">
               <ul className="categories">
                 <li className="text-pink-600 font-semibold">Topwear</li>
                 <li>Tops</li>
@@ -523,7 +523,7 @@ const Categories = () => {
           </div>
 
           {electronic && (
-            <div className="bg-white w-full mt-4 left-0 border border-pink-100 shadow-md absolute md:flex text-gray-600">
+            <div className="bg-white w-full mt-9 xl:mt-4 left-0 border border-pink-100 shadow-md absolute md:flex text-gray-600">
               <ul className="categories">
                 <li className="text-pink-600 font-semibold">Topwear</li>
                 <li>Tops</li>
