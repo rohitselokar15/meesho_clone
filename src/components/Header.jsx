@@ -43,16 +43,25 @@ const Header = () => {
   };
 
   return (
-    <div className="xl:container xl:mx-auto max-w-7xl sticky top-0 bg-white">
-      <nav className="flex justify-between lg:justify-around items-center h-16 mx-2 lg:mx-0 border">
+    <div className="container mx-auto max-w-[1530px] sticky top-0 bg-white">
+      <nav className="flex justify-between lg:justify-around items-center h-16 mx-2 lg:mx-0">
         {/* <div className="flex items-center "> */}
-        <div className=" ">
+        <div className="">
           <Link to="/">
             <img src={logo} className="w-32 md:w-36" />
             {/* <p className="text-pink-700 text-[35px] font-semibold">meesho</p> */}
           </Link>
         </div>
         {/* </div> */}
+
+        <div className="hidden md:inline lg:hidden border border-gray-300 rounded-md">
+          <i className="fa-solid fa-magnifying-glass text-gray-500 px-2" />
+          <input
+            type="text"
+            placeholder="Try Saree,Kurti or Search by Product code"
+            className="p-1.5 w-[350px]"
+          />
+        </div>
 
         <div className="flex">
           <p
@@ -79,12 +88,12 @@ const Header = () => {
             } lg:static lg:bg-transparent lg:p-0`}
           >
             <ul className="text-center lg:flex items-center text-gray-800 ">
-              <li className="hidden lg:inline p-1 xl:p-2 border border-gray-300">
-                <i className="fa-solid fa-magnifying-glass px-1 text-gray-500" />
+              <li className="hidden md:inline border border-gray-300 rounded-md">
+                <i className="fa-solid fa-magnifying-glass px-2 text-gray-500" />
                 <input
                   type="text"
-                  placeholder="Try Saree,Kurti or Search by Product Code"
-                  className="lg:w-[250px] xl:w-[320px]"
+                  placeholder="Try Saree,Kurti or Search product"
+                  className="lg:w-[250px] p-1 xl:w-[320px]"
                 />
               </li>
 

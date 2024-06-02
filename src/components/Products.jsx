@@ -53,7 +53,7 @@ const Products = () => {
   };
 
   return (
-    <div className="xl:container xl:mx-auto max-w-7xl">
+    <div className="container mx-auto max-w-[1390px]">
       {/* <div className=" flex justify-center">
         <img src={home} className="w-[1000px]" />
       </div> */}
