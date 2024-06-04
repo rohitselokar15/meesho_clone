@@ -250,7 +250,7 @@
     "price": 449,
     "description": "Free delivery and returns on eligible orders of £20 or more. Buy REETEE Mens Wallet RFID Blocking Wallet for Men Genuine Leather Wallets Mens with Chain,Bifold Men's Wallets with 15 Card Holder and Coin Pocket Zip,with Gift Box (A-Black) at Amazon Fashion.",
     "category": "bags",
-    "image": "../public/bag.jpg",
+    "image": "/bag.jpg",
     "rating": {
       "rate": 4.6,
       "count": 245
@@ -263,7 +263,7 @@
     "price": 449,
     "description": "Free delivery and returns on eligible orders of £20 or more. Buy REETEE Mens Wallet RFID Blocking Wallet for Men Genuine Leather Wallets Mens with Chain,Bifold Men's Wallets with 15 Card Holder and Coin Pocket Zip,with Gift Box (A-Black) at Amazon Fashion.",
     "category": "bags",
-    "image": "./Women hand bag.jpg",
+    "image": "/Women hand bag.jpg",
     "rating": {
       "rate": 2.6,
       "count": 45
@@ -289,7 +289,7 @@
     "price": 149,
     "description": "Free delivery and returns on eligible orders of £20 or more. Buy REETEE Mens Wallet RFID Blocking Wallet for Men Genuine Leather Wallets Mens with Chain,Bifold Men's Wallets with 15 Card Holder and Coin Pocket Zip,with Gift Box (A-Black) at Amazon Fashion.",
     "category": "bags",
-    "image": "bags for women latest design.jpg",
+    "image": "/bags for women latest design.jpg",
     "rating": {
       "rate": 1.6,
       "count": 45
@@ -302,7 +302,7 @@
     "price": 649,
     "description": "Free delivery and returns on eligible orders of £20 or more. Buy REETEE Mens Wallet RFID Blocking Wallet for Men Genuine Leather Wallets Mens with Chain,Bifold Men's Wallets with 15 Card Holder and Coin Pocket Zip,with Gift Box (A-Black) at Amazon Fashion.",
     "category": "bags",
-    "image": "/src/assets/bag women handbag.jpg",
+    "image": "/bag women handbag.jpg",
     "rating": {
       "rate": 4.6,
       "count": 645
@@ -315,7 +315,7 @@
     "price": 99,
     "description": "Free delivery and returns on eligible orders of £20 or more. Buy REETEE Mens Wallet RFID Blocking Wallet for Men Genuine Leather Wallets Mens with Chain,Bifold Men's Wallets with 15 Card Holder and Coin Pocket Zip,with Gift Box (A-Black) at Amazon Fashion.",
     "category": "bags",
-    "image": "/src/assets/bag men's Mini Square Bag Letter Patch Decor Chest Bag.jpg",
+    "image": "/bag men's Mini Square Bag Letter Patch Decor Chest Bag.jpg",
     "rating": {
       "rate": 3.8,
       "count": 135
@@ -328,7 +328,7 @@
     "price": 649,
     "description": "Free delivery and returns on eligible orders of £20 or more. Buy REETEE Mens Wallet RFID Blocking Wallet for Men Genuine Leather Wallets Mens with Chain,Bifold Men's Wallets with 15 Card Holder and Coin Pocket Zip,with Gift Box (A-Black) at Amazon Fashion.",
     "category": "bags",
-    "image": "/src/assets/Bag men's Leather Briefcase,Brown Leather Briefcase, Men Leather Briefcase.jpg",
+    "image": "/Bag men's Leather Briefcase,Brown Leather Briefcase, Men Leather Briefcase.jpg",
     "rating": {
       "rate": 4.8,
       "count": 345
@@ -341,7 +341,7 @@
     "price": 1449,
     "description": "Free delivery and returns on eligible orders of £20 or more. Buy REETEE Mens Wallet RFID Blocking Wallet for Men Genuine Leather Wallets Mens with Chain,Bifold Men's Wallets with 15 Card Holder and Coin Pocket Zip,with Gift Box (A-Black) at Amazon Fashion.",
     "category": "bags",
-    "image": "/src/assets/bag men The 10 Essential Bags for Work, Travel, and Everything Else Life Throws at You.jpg",
+    "image": "/bag men The 10 Essential Bags for Work, Travel, and Everything Else Life Throws at You.jpg",
     "rating": {
       "rate": 5.0,
       "count": 1045
@@ -351,10 +351,10 @@
   {
     "id": 28,
     "title": "Oil 5 Best Coconut Oils and Their Application For Hair Growth",
-    "price": 149,
+    "price": 29,
     "description": "Parachute Coconut oil is India’s No.1 coconut oil that contains the goodness of 100% pure coconut oil. It is made from naturally sun-dried coconuts sourced from the finest farms of our country.It is made from naturally sun-dried coconuts sourced from the finest farms of our country. The oil is extracted from the nuts through a meticulous hands free process. It goes through a 5 stage purification process and as many as 27 quality tests are performed on the oil so that each bottle that reaches you is 100% pure",
     "category": "hair-oil",
-    "image": "/src/assets/oil 5 Best Coconut Oils and Their Application For Hair Growth.jpg",
+    "image": "/oil 5 Best Coconut Oils and Their Application For Hair Growth.jpg",
     "rating": {
       "rate": 4.5,
       "count": 1045
@@ -364,128 +364,128 @@
   {
     "id": 29,
     "title": "Hemani Hair Oil 200mL (6_76 FL OZ) Natural Solution for Strong and Shiny Hair",
-    "price": 149,
+    "price": 19,
     "description": "Parachute Coconut oil is India’s No.1 coconut oil that contains the goodness of 100% pure coconut oil. It is made from naturally sun-dried coconuts sourced from the finest farms of our country.It is made from naturally sun-dried coconuts sourced from the finest farms of our country. The oil is extracted from the nuts through a meticulous hands free process. It goes through a 5 stage purification process and as many as 27 quality tests are performed on the oil so that each bottle that reaches you is 100% pure",
     "category": "hair-oil",
-    "image": "/src/assets/Hemani Hair Oil 200mL (6_76 FL OZ) Natural Solution for Strong and Shiny Hair (Argan with Blackseed & Coconut).jpg",
+    "image": "/Hemani Hair Oil 200mL (6_76 FL OZ) Natural Solution for Strong and Shiny Hair (Argan with Blackseed & Coconut).jpg",
     "rating": {
-      "rate": 4.5,
+      "rate": 1.5,
       "count": 1045
     }
   },
   {
     "id": 30,
     "title": "Oil Majestic Pure Fractionated Coconut Oil - Relaxing Massage Oil, Liquid Carrier",
-    "price": 149,
+    "price": 109,
     "description": "Parachute Coconut oil is India’s No.1 coconut oil that contains the goodness of 100% pure coconut oil. It is made from naturally sun-dried coconuts sourced from the finest farms of our country.It is made from naturally sun-dried coconuts sourced from the finest farms of our country. The oil is extracted from the nuts through a meticulous hands free process. It goes through a 5 stage purification process and as many as 27 quality tests are performed on the oil so that each bottle that reaches you is 100% pure",
     "category": "hair-oil",
-    "image": "/src/assets/Oil Majestic Pure Fractionated Coconut Oil - Relaxing Massage Oil, Liquid Carrier Oil.jpg",
+    "image": "/Oil Majestic Pure Fractionated Coconut Oil - Relaxing Massage Oil, Liquid Carrier Oil.jpg",
     "rating": {
-      "rate": 4.5,
-      "count": 1045
+      "rate": 3.5,
+      "count": 45
     }
   },
   {
     "id": 31,
     "title": "Oil How To Use Magnesium To Get Rid Of Cellulite",
-    "price": 149,
+    "price": 249,
     "description": "Parachute Coconut oil is India’s No.1 coconut oil that contains the goodness of 100% pure coconut oil. It is made from naturally sun-dried coconuts sourced from the finest farms of our country.It is made from naturally sun-dried coconuts sourced from the finest farms of our country. The oil is extracted from the nuts through a meticulous hands free process. It goes through a 5 stage purification process and as many as 27 quality tests are performed on the oil so that each bottle that reaches you is 100% pure",
     "category": "hair-oil",
-    "image": "/src/assets/Oil How To Use Magnesium To Get Rid Of Cellulite.jpg",
+    "image": "/Oil How To Use Magnesium To Get Rid Of Cellulite.jpg",
     "rating": {
-      "rate": 4.5,
-      "count": 1045
+      "rate": 2.5,
+      "count": 145
     },
     "gender": "mens"
   },
   {
     "id": 32,
     "title": "Men Women Polarized Sunglasses Luxury Brand Designer Vintage Sunglasses.",
-    "price": 149,
+    "price": 199,
     "description": "SPECIFICATIONS Brand Name: LAOTING.JIANG Origin: Mainland China Gender: MEN Department Name: ADULT Frame Material: Plastic Style: SQUARE Lenses Optical Attribute: polarized Lenses Optical Attribute: MIRROR Lenses Optical Attribute: Anti-reflective Lenses Optical Attribute: UV400 Lens Height: 49mm Lens Width: 59mm Model Number: 919364733 Item Type: EYEWEAR Eyewear Type: Sunglasses Lenses Material: Polycarbonate Certification: none Frame color: Black Clear Gray Grey Brown Tea Blue Dark green Matte Red Pattern Lens color: Black Gray Brown Tea Blue Mirror Green Red G15 Lenes Lens function: Polarized Anti-glare Anti-reflective Anti-radiation UV400 Usage scope: Car Driving Fishing Hiking Camping Shopping Party Travel Driver Sport Suitable face shape: Round face,Long face,Square face,Oval face.",
     "category": "sunglass",
-    "image": "/src/assets/Men Women Polarized Sunglasses Luxury Brand Designer Vintage Sunglasses Man Fashionable Driving Sun Glasses Eyewear Eyepieces.jpg",
+    "image": "/Men Women Polarized Sunglasses Luxury Brand Designer Vintage Sunglasses Man Fashionable Driving Sun Glasses Eyewear Eyepieces.jpg",
     "rating": {
-      "rate": 4.5,
-      "count": 1045
+      "rate": 2.2,
+      "count": 15
     },
     "gender": "mens"
   },
   {
     "id": 33,
     "title": "Men Rivet Decor Square Frame Sunglasses",
-    "price": 149,
+    "price": 349,
     "description": "SPECIFICATIONS Brand Name: LAOTING.JIANG Origin: Mainland China Gender: MEN Department Name: ADULT Frame Material: Plastic Style: SQUARE Lenses Optical Attribute: polarized Lenses Optical Attribute: MIRROR Lenses Optical Attribute: Anti-reflective Lenses Optical Attribute: UV400 Lens Height: 49mm Lens Width: 59mm Model Number: 919364733 Item Type: EYEWEAR Eyewear Type: Sunglasses Lenses Material: Polycarbonate Certification: none Frame color: Black Clear Gray Grey Brown Tea Blue Dark green Matte Red Pattern Lens color: Black Gray Brown Tea Blue Mirror Green Red G15 Lenes Lens function: Polarized Anti-glare Anti-reflective Anti-radiation UV400 Usage scope: Car Driving Fishing Hiking Camping Shopping Party Travel Driver Sport Suitable face shape: Round face,Long face,Square face,Oval face.",
     "category": "sunglass",
-    "image": "/src/assets/Men Rivet Decor Square Frame Sunglasses.jpg",
+    "image": "/Men Rivet Decor Square Frame Sunglasses.jpg",
     "rating": {
-      "rate": 4.5,
-      "count": 1045
+      "rate": 3.5,
+      "count": 85
     },
     "gender": "mens"
   },
   {
     "id": 34,
     "title": "Men Rimless Fashion Glasses With Case",
-    "price": 149,
+    "price": 99,
     "description": "SPECIFICATIONS Brand Name: LAOTING.JIANG Origin: Mainland China Gender: MEN Department Name: ADULT Frame Material: Plastic Style: SQUARE Lenses Optical Attribute: polarized Lenses Optical Attribute: MIRROR Lenses Optical Attribute: Anti-reflective Lenses Optical Attribute: UV400 Lens Height: 49mm Lens Width: 59mm Model Number: 919364733 Item Type: EYEWEAR Eyewear Type: Sunglasses Lenses Material: Polycarbonate Certification: none Frame color: Black Clear Gray Grey Brown Tea Blue Dark green Matte Red Pattern Lens color: Black Gray Brown Tea Blue Mirror Green Red G15 Lenes Lens function: Polarized Anti-glare Anti-reflective Anti-radiation UV400 Usage scope: Car Driving Fishing Hiking Camping Shopping Party Travel Driver Sport Suitable face shape: Round face,Long face,Square face,Oval face.",
     "category": "sunglass",
-    "image": "/src/assets/Men Rimless Fashion Glasses With Case.jpg",
+    "image": "/Men Rimless Fashion Glasses With Case.jpg",
     "rating": {
-      "rate": 4.5,
-      "count": 1045
+      "rate": 1.1,
+      "count": 95
     },
     "gender": "mens"
   },
   {
     "id": 35,
     "title": "Ray-Ban RB3588 Square Sunglasses",
-    "price": 149,
+    "price": 119,
     "description": "SPECIFICATIONS Brand Name: LAOTING.JIANG Origin: Mainland China Gender: MEN Department Name: ADULT Frame Material: Plastic Style: SQUARE Lenses Optical Attribute: polarized Lenses Optical Attribute: MIRROR Lenses Optical Attribute: Anti-reflective Lenses Optical Attribute: UV400 Lens Height: 49mm Lens Width: 59mm Model Number: 919364733 Item Type: EYEWEAR Eyewear Type: Sunglasses Lenses Material: Polycarbonate Certification: none Frame color: Black Clear Gray Grey Brown Tea Blue Dark green Matte Red Pattern Lens color: Black Gray Brown Tea Blue Mirror Green Red G15 Lenes Lens function: Polarized Anti-glare Anti-reflective Anti-radiation UV400 Usage scope: Car Driving Fishing Hiking Camping Shopping Party Travel Driver Sport Suitable face shape: Round face,Long face,Square face,Oval face.",
     "category": "sunglass",
-    "image": "/src/assets/Ray-Ban RB3588 Square Sunglasses.jpg",
+    "image": "/Ray-Ban RB3588 Square Sunglasses.jpg",
     "rating": {
-      "rate": 4.5,
-      "count": 1045
+      "rate": 1.5,
+      "count": 1015
     },
     "gender": "mens"
   },
   {
     "id": 36,
     "title": "Genuine KINGSEVEN New 2023 Brand Design Men's Glasses Polarized Sunglasses",
-    "price": 149,
+    "price": 141,
     "description": "SPECIFICATIONS Brand Name: LAOTING.JIANG Origin: Mainland China Gender: MEN Department Name: ADULT Frame Material: Plastic Style: SQUARE Lenses Optical Attribute: polarized Lenses Optical Attribute: MIRROR Lenses Optical Attribute: Anti-reflective Lenses Optical Attribute: UV400 Lens Height: 49mm Lens Width: 59mm Model Number: 919364733 Item Type: EYEWEAR Eyewear Type: Sunglasses Lenses Material: Polycarbonate Certification: none Frame color: Black Clear Gray Grey Brown Tea Blue Dark green Matte Red Pattern Lens color: Black Gray Brown Tea Blue Mirror Green Red G15 Lenes Lens function: Polarized Anti-glare Anti-reflective Anti-radiation UV400 Usage scope: Car Driving Fishing Hiking Camping Shopping Party Travel Driver Sport Suitable face shape: Round face,Long face,Square face,Oval face.",
     "category": "sunglass",
-    "image": "/src/assets/Genuine KINGSEVEN New 2023 Brand Design Men's Glasses Polarized Sunglasses Women UV Lens Fashion Eyewear Oculos de sol.jpg",
+    "image": "/Genuine KINGSEVEN New 2023 Brand Design Men's Glasses Polarized Sunglasses Women UV Lens Fashion Eyewear Oculos de sol.jpg",
     "rating": {
-      "rate": 4.5,
-      "count": 1045
+      "rate": 4.1,
+      "count": 115
     },
     "gender": "mens"
   },
   {
     "id": 37,
     "title": "6PCS Magnetic Polarized Clip On Sunglasses Women Men Plastic Frame for Night",
-    "price": 149,
+    "price": 11,
     "description": "SPECIFICATIONS Brand Name: LAOTING.JIANG Origin: Mainland China Gender: MEN Department Name: ADULT Frame Material: Plastic Style: SQUARE Lenses Optical Attribute: polarized Lenses Optical Attribute: MIRROR Lenses Optical Attribute: Anti-reflective Lenses Optical Attribute: UV400 Lens Height: 49mm Lens Width: 59mm Model Number: 919364733 Item Type: EYEWEAR Eyewear Type: Sunglasses Lenses Material: Polycarbonate Certification: none Frame color: Black Clear Gray Grey Brown Tea Blue Dark green Matte Red Pattern Lens color: Black Gray Brown Tea Blue Mirror Green Red G15 Lenes Lens function: Polarized Anti-glare Anti-reflective Anti-radiation UV400 Usage scope: Car Driving Fishing Hiking Camping Shopping Party Travel Driver Sport Suitable face shape: Round face,Long face,Square face,Oval face.",
     "category": "sunglass",
-    "image": "/src/assets/6PCS Magnetic Polarized Clip On Sunglasses Women Men Plastic Frame for Night Driving Sunglasses UV400 - 2326A.jpg",
+    "image": "/6PCS Magnetic Polarized Clip On Sunglasses Women Men Plastic Frame for Night Driving Sunglasses UV400 - 2326A.jpg",
     "rating": {
-      "rate": 4.5,
-      "count": 1045
+      "rate": 0.5,
+      "count": 5
     },
     "gender": "mens"
   },
   {
     "id": 38,
     "title": "$9_03 - NICHOLAS Retro Round Sunglasses Women Men Brand Designt",
-    "price": 149,
+    "price": 9,
     "description": "SPECIFICATIONS Brand Name: LAOTING.JIANG Origin: Mainland China Gender: MEN Department Name: ADULT Frame Material: Plastic Style: SQUARE Lenses Optical Attribute: polarized Lenses Optical Attribute: MIRROR Lenses Optical Attribute: Anti-reflective Lenses Optical Attribute: UV400 Lens Height: 49mm Lens Width: 59mm Model Number: 919364733 Item Type: EYEWEAR Eyewear Type: Sunglasses Lenses Material: Polycarbonate Certification: none Frame color: Black Clear Gray Grey Brown Tea Blue Dark green Matte Red Pattern Lens color: Black Gray Brown Tea Blue Mirror Green Red G15 Lenes Lens function: Polarized Anti-glare Anti-reflective Anti-radiation UV400 Usage scope: Car Driving Fishing Hiking Camping Shopping Party Travel Driver Sport Suitable face shape: Round face,Long face,Square face,Oval face.",
     "category": "sunglass",
-    "image": "/src/assets/$9_03 - NICHOLAS Retro Round Sunglasses Women Men Brand Design Transparent Female Sun glasses___.jpg",
+    "image": "/$9_03 - NICHOLAS Retro Round Sunglasses Women Men Brand Design Transparent Female Sun glasses___.jpg",
     "rating": {
-      "rate": 4.5,
-      "count": 1045
+      "rate": 0.7,
+      "count": 45
     },
     "gender": "mens"
   }
