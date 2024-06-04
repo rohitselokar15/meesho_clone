@@ -250,7 +250,7 @@
     "price": 449,
     "description": "Free delivery and returns on eligible orders of £20 or more. Buy REETEE Mens Wallet RFID Blocking Wallet for Men Genuine Leather Wallets Mens with Chain,Bifold Men's Wallets with 15 Card Holder and Coin Pocket Zip,with Gift Box (A-Black) at Amazon Fashion.",
     "category": "bags",
-    "image": "/src/assets/bag.jpg",
+    "image": "../public/bag.jpg",
     "rating": {
       "rate": 4.6,
       "count": 245
@@ -263,7 +263,7 @@
     "price": 449,
     "description": "Free delivery and returns on eligible orders of £20 or more. Buy REETEE Mens Wallet RFID Blocking Wallet for Men Genuine Leather Wallets Mens with Chain,Bifold Men's Wallets with 15 Card Holder and Coin Pocket Zip,with Gift Box (A-Black) at Amazon Fashion.",
     "category": "bags",
-    "image": "/src/assets/Women hand bag.jpg",
+    "image": "./Women hand bag.jpg",
     "rating": {
       "rate": 2.6,
       "count": 45
@@ -276,7 +276,7 @@
     "price": 449,
     "description": "Free delivery and returns on eligible orders of £20 or more. Buy REETEE Mens Wallet RFID Blocking Wallet for Men Genuine Leather Wallets Mens with Chain,Bifold Men's Wallets with 15 Card Holder and Coin Pocket Zip,with Gift Box (A-Black) at Amazon Fashion.",
     "category": "bags",
-    "image": "/src/assets/Bags man's PU Leather Shoulder Bag - Coffee Brown _ One Size.jpg",
+    "image": "/Bags man's PU Leather Shoulder Bag - Coffee Brown _ One Size.jpg",
     "rating": {
       "rate": 3.2,
       "count": 45
@@ -289,7 +289,7 @@
     "price": 149,
     "description": "Free delivery and returns on eligible orders of £20 or more. Buy REETEE Mens Wallet RFID Blocking Wallet for Men Genuine Leather Wallets Mens with Chain,Bifold Men's Wallets with 15 Card Holder and Coin Pocket Zip,with Gift Box (A-Black) at Amazon Fashion.",
     "category": "bags",
-    "image": "/src/assets/bags for women latest design.jpg",
+    "image": "bags for women latest design.jpg",
     "rating": {
       "rate": 1.6,
       "count": 45
